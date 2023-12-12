@@ -15,7 +15,7 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
     {
         public FormMain_SIA()
         {
-             InitializeComponent();
+            InitializeComponent();
         }
 
         private void FormMain_SIA_Load(object sender, EventArgs e)
@@ -24,5 +24,5 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
             PopulateDataGridView(); // Отобразить видеоклипы в DataGridView
         }
     }
-    }
+}
 

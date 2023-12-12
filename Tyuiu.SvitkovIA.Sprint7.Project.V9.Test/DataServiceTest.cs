@@ -8,9 +8,19 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void  TestMethod1()
+        public void TestAddVideoClip()
         {
+            DataServiceTest catalog = new DataServiceTest();
+            DataServiceTest videoClip = new DataServiceTest();
+
 
         }
     }
 }
+
+            
+            
+    
+
+
+

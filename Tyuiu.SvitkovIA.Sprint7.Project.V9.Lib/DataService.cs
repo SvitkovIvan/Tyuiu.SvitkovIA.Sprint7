@@ -7,7 +7,14 @@ using System.IO;
 
 namespace Tyuiu.SvitkovIA.Sprint7.Project.V9.Lib
 {
-    public class  DataService
+    public class DataService
     {
+        private List<DataService> videoClips;
+
+        public DataService()
+        {
+            videoClips = new List<DataService>();
+        }
+
     }
 }
