@@ -15,7 +15,7 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
     {
         public FormMain()
         {
-            InitializeComponent();
+             InitializeComponent();
         }
     }
 }
