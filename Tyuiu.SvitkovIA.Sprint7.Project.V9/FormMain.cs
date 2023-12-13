@@ -22,7 +22,7 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
 
         }
 
-        private void FormMain_SIA_Load(object sender, EventArgs e)
+        private void FormMain_SIA_Load (object sender, EventArgs e)
         {
             LoadVideoClipsFromCSV(); 
             PopulateDataGridView(); 

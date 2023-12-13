@@ -30,17 +30,17 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9.Test
                 }
             };
 
-            
+
             videoLibrary.AddVideoClip(videoClip);
 
-            
+
             Assert.AreEqual(1, videoLibrary.GetVideoClipsCount());
 
-            
+
             VideoClip addedVideoClip = videoLibrary.GetVideoClipByCode("VC001");
             Assert.IsNotNull(addedVideoClip);
             Assert.AreEqual("Action", addedVideoClip.Theme);
-            
+
         }
 
         
