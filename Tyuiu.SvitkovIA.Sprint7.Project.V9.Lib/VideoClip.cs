@@ -29,10 +29,35 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9.Lib
     public class VideoLibrary
     {
         private List<VideoClip> videoClips;
+        private string csvFilePath;
 
-        public VideoLibrary()
+        public VideoLibrary(string filePath)
         {
             videoClips = new List<VideoClip>();
+            csvFilePath = filePath;
+        }
+        public void AddVideoClip(VideoClip videoClip)
+        {
+            videoClips.Add(videoClip);
+        }
+
+        public int GetVideoClipsCount()
+        {
+            return videoClips.Count;
+        }
+
+        public void SaveToCSV()
+        {
+
+        }
+
+        public void LoadFromCSV()
+        {
+
         }
     }
 }
+
+
+
+    

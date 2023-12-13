@@ -18,14 +18,14 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
         public FormMain_SIA()
         {
             InitializeComponent();
-            videoLibrary = new VideoLibrary();
+            videoLibrary = new VideoLibrary(("videoClips.csv"));
 
         }
 
         private void FormMain_SIA_Load(object sender, EventArgs e)
         {
-            LoadVideoClipsFromCSV(); // Загрузить видеоклипы из CSV-файла
-            PopulateDataGridView(); // Отобразить видеоклипы в DataGridView
+            LoadVideoClipsFromCSV(); 
+            PopulateDataGridView(); 
         }
     }
 }
