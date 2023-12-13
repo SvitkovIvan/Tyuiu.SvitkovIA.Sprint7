@@ -22,9 +22,9 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9.Test
                 Cost = 10.99m,
                 Actor = new Actor
                 {
-                    LastName = "Smith",
-                    FirstName = "John",
-                    MiddleName = "Doe",
+                    LastName = "Alexandr",
+                    FirstName = "Stepan",
+                    MiddleName = "Maxim",
                     Role = "Lead Actor"
                 }
             };

@@ -14,9 +14,11 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
 {
     public partial class FormMain_SIA : Form
     {
+        private VideoLibrary videoLibrary;
         public FormMain_SIA()
         {
             InitializeComponent();
+            videoLibrary = new VideoLibrary();
 
         }
 
