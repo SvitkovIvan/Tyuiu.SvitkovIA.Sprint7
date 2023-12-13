@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.SvitkovIA.Sprint7.Pro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.SvitkovIA.Sprint7.Project.V9", "Tyuiu.SvitkovIA.Sprint7.Project.V9\Tyuiu.SvitkovIA.Sprint7.Project.V9.csproj", "{06CD99E8-7B58-49C6-A0F4-FD9C1EC60BAF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{C4EA5786-633D-40CB-A495-224C2A67939D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{06CD99E8-7B58-49C6-A0F4-FD9C1EC60BAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06CD99E8-7B58-49C6-A0F4-FD9C1EC60BAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06CD99E8-7B58-49C6-A0F4-FD9C1EC60BAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4EA5786-633D-40CB-A495-224C2A67939D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4EA5786-633D-40CB-A495-224C2A67939D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4EA5786-633D-40CB-A495-224C2A67939D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4EA5786-633D-40CB-A495-224C2A67939D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

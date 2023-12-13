@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using Tyuiu.SvitkovIA.Sprint7.Project.V9.Lib;
 
 namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
 {
@@ -16,6 +17,7 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
         public FormMain_SIA()
         {
             InitializeComponent();
+
         }
 
         private void FormMain_SIA_Load(object sender, EventArgs e)
