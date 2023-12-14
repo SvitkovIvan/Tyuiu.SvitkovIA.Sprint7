@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Globalization;
 
 namespace Tyuiu.SvitkovIA.Sprint7.Project.V9.Lib
 {
@@ -24,6 +25,8 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9.Lib
         public string FirstName { get; set; }
         public string MiddleName { get; set; }
         public string Role { get; set; }
+
+        public string FullName => $"{LastName} {FirstName} {MiddleName}";
     }
 
     public class VideoLibrary
@@ -36,6 +39,7 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9.Lib
             videoClips = new List<VideoClip>();
             csvFilePath = filePath;
         }
+
         public void AddVideoClip(VideoClip videoClip)
         {
             videoClips.Add(videoClip);
@@ -47,13 +51,25 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9.Lib
         }
 
         public void SaveToCSV()
-        {
 
+        {
+            using (var writer = new StreamWriter(csvFilePath))
+            using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
+            {
+                csv.WriteRecords(videoClips);
+            }
         }
 
         public void LoadFromCSV()
         {
-
+            if (File.Exists(csvFilePath))
+            {
+                using (var reader = new StreamReader(csvFilePath))
+                using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+                {
+                    videoClips = csv.GetRecords<VideoClip>().ToList();
+                }
+            }
         }
     }
 }
