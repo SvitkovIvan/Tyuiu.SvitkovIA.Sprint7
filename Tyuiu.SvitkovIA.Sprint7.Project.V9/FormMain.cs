@@ -15,6 +15,8 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
     public partial class FormMain_SIA : Form
     {
         private VideoLibrary videoLibrary;
+        private BindingList<VideoClip> videoClipsBindingList;
+        videoClipsBindingList = new BindingList<VideoClip>();
         public FormMain_SIA()
         {
             InitializeComponent();
