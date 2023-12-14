@@ -15,7 +15,7 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9.Test
         [TestInitialize]
         public void Initialize()
         {
-            // Создаем новый экземпляр VideoLibrary и удаляем существующий тестовый CSV-файл (если есть)
+            
             videoLibrary = new VideoLibrary(TestCsvFilePath);
             if (File.Exists(TestCsvFilePath))
             {
@@ -26,7 +26,7 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9.Test
         [TestMethod]
         public void AddVideoClip_ValidData_VideoClipAdded()
         {
-            // Arrange
+            
             VideoClip videoClip = new VideoClip
             {
                 Code = "VC001",
@@ -43,17 +43,17 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9.Test
                 }
             };
 
-            // Act
+            
             videoLibrary.AddVideoClip(videoClip);
 
-            // Assert
+            
             Assert.AreEqual(1, videoLibrary.GetVideoClipsCount());
 
-            // Additional assertions (if needed)
+            
             VideoClip addedVideoClip = videoLibrary.GetVideoClipByCode("VC001");
             Assert.IsNotNull(addedVideoClip);
             Assert.AreEqual("Action", addedVideoClip.Theme);
-            // ...
+            
         }
 
         
