@@ -82,7 +82,7 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9.Lib
                 using (var reader = new StreamReader(csvFilePath))
                 using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
                 {
-                    videoClips = csv.GetRecords<VideoClip>().ToList();
+                    videoClips = csv.GetRecords < VideoClip > ().ToList();
                 }
             }
 
