@@ -16,19 +16,49 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
     {
         private VideoLibrary videoLibrary;
         private BindingList<VideoClip> videoClipsBindingList;
-        videoClipsBindingList = new BindingList<VideoClip>();
+
         public FormMain_SIA()
         {
             InitializeComponent();
-            videoLibrary = new VideoLibrary(("videoClips.csv"));
-
+            videoClipsBindingList = new BindingList<VideoClip>();
+            videoLibrary = new VideoLibrary("videoClips.csv");
         }
 
-        private void FormMain_SIA_Load (object sender, EventArgs e)
+        private void FormMain_SIA_Load(object sender, EventArgs e)
         {
-            LoadVideoClipsFromCSV(); 
-            PopulateDataGridView(); 
+            LoadVideoClipsFromCSV();
+            PopulateDataGridView();
+        }
+
+        private void LoadVideoClipsFromCSV()
+        {
+            List<VideoClip> videoClips = videoLibrary.LoadVideoClipsFromCSV();
+
+            foreach (VideoClip videoClip in videoClips)
+            {
+                videoClipsBindingList.Add(videoClip);
+            }
+        }
+
+        private void PopulateDataGridView()
+        {
+            DataGridViewColumn columnId = new DataGridViewTextBoxColumn();
+            columnId.DataPropertyName = "Id";
+            columnId.HeaderText = "ID";
+
+            DataGridViewColumn columnTitle = new DataGridViewTextBoxColumn();
+            columnTitle.DataPropertyName = "Title";
+            columnTitle.HeaderText = "Title";
+
+            DataGridViewColumn columnDuration = new DataGridViewTextBoxColumn();
+            columnDuration.DataPropertyName = "Duration";
+            columnDuration.HeaderText = "Duration";
+
         }
     }
 }
+        
+
+
+
 
