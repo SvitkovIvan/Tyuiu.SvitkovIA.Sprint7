@@ -43,16 +43,16 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
         private void PopulateDataGridView()
         {
             DataGridViewColumn columnId = new DataGridViewTextBoxColumn();
-            columnId.DataPropertyName = "Id";
-            columnId.HeaderText = "ID";
+            columnId.DataPropertyName = " Id ";
+            columnId.HeaderText = " ID ";
 
             DataGridViewColumn columnTitle = new DataGridViewTextBoxColumn();
-            columnTitle.DataPropertyName = "Title";
-            columnTitle.HeaderText = "Title";
+            columnTitle.DataPropertyName = " Заголовок ";
+            columnTitle.HeaderText = " Заголовок ";
 
             DataGridViewColumn columnDuration = new DataGridViewTextBoxColumn();
-            columnDuration.DataPropertyName = "Duration";
-            columnDuration.HeaderText = "Duration";
+            columnDuration.DataPropertyName = " Продолжительность ";
+            columnDuration.HeaderText = " Продолжительность ";
 
         }
     }

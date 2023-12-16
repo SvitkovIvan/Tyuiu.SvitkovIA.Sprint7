@@ -30,17 +30,17 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9.Test
         {
             VideoClip videoClip = new VideoClip
             {
-                Code = "VC001",
+                Code = " VC001 ",
                 Date = DateTime.Now,
                 Duration = TimeSpan.FromMinutes(30),
-                Theme = "Action",
+                Theme = " Действие ",
                 Cost = 10.99m,
                 Actor = new Actor
                 {
-                    LastName = "Stepan",
-                    FirstName = "Egor",
-                    MiddleName = "Maxim",
-                    Role = "Lead Actor"
+                    LastName = " Степан ",
+                    FirstName = " Максим ",
+                    MiddleName = " Илья ",
+                    Role = " Ведущий актер "
                 }
             };
 
@@ -50,7 +50,7 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9.Test
 
             VideoClip addedVideoClip = videoLibrary.GetVideoClipByCode("VC001");
             Assert.IsNotNull(addedVideoClip);
-            Assert.AreEqual("Action", addedVideoClip.Theme);
+            Assert.AreEqual(" Действие ", addedVideoClip.Theme);
         }
 
         [TestMethod]
@@ -58,17 +58,17 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9.Test
         {
             VideoClip videoClip = new VideoClip
             {
-                Code = "VC002",
+                Code = " VC002 ",
                 Date = DateTime.Now,
                 Duration = TimeSpan.FromMinutes(45),
                 Theme = null, // Invalid: Theme cannot be null
                 Cost = 9.99m,
                 Actor = new Actor
                 {
-                    LastName = "Smith",
-                    FirstName = "John",
-                    MiddleName = "Doe",
-                    Role = "Supporting Actor"
+                    LastName = " Cтепан ",
+                    FirstName = " Максим ",
+                    MiddleName = " Илья ",
+                    Role = " Актер 2 плана "
                 }
             };
 
