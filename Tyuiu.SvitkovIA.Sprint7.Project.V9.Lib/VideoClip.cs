@@ -60,6 +60,21 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9.Lib
             }
         }
 
+        public VideoClip GetVideoClipByCode(string code)
+        {
+            return videoClips.FirstOrDefault(vc => vc.Code == code);
+        }
+
+        public List<VideoClip> GetVideoClipsByTheme(string theme)
+        {
+            return videoClips.Where(vc => vc.Theme == theme).ToList();
+        }
+
+        public decimal GetTotalCost()
+        {
+            return videoClips.Sum(vc => vc.Cost);
+        }
+
         public void LoadFromCSV()
         {
             if (File.Exists(csvFilePath))
@@ -70,6 +85,7 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9.Lib
                     videoClips = csv.GetRecords<VideoClip>().ToList();
                 }
             }
+
         }
     }
 }
