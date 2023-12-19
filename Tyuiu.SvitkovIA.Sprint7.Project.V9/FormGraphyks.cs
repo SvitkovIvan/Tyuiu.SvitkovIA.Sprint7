@@ -96,7 +96,28 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
             }
         }
 
+        private void buttonSaveFile_URI(object sender, EventArgs e)
+        {
+            try
+            {
+                saveFileDialog_SIA.FileName = ".lsx";
+                saveFileDialog_SIA.InitialDirectory = @":C";
+                saveFileDialog_SIA.ShowDialog();
+                string path = saveFileDialog_SIA.FileName;
+                FileInfo fileInfo = new FileInfo(path);
+                bool fileExists = fileInfo.Exists;
+                if (fileExists)
+                {
+                    File.Delete(path);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Файл не сохранен", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
+
 }
     
 
