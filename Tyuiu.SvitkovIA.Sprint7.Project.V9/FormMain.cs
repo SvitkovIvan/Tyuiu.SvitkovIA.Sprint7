@@ -15,12 +15,12 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
     public partial class FormMain_SIA : Form
     {
         private VideoLibrary videoLibrary;
-        private BindingList<VideoClip> videoClipsBindingList;
+        private BindingList<DataService> videoClipsBindingList;
 
         public FormMain_SIA()
         {
             InitializeComponent();
-            videoClipsBindingList = new BindingList<VideoClip>();
+            videoClipsBindingList = new BindingList<DataService>();
             videoLibrary = new VideoLibrary("videoClips.csv");
         }
 
@@ -32,9 +32,9 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
 
         private void LoadVideoClipsFromCSV()
         {
-            List<VideoClip> videoClips = videoLibrary.LoadVideoClipsFromCSV();
+            List<DataService> videoClips = videoLibrary.LoadVideoClipsFromCSV();
 
-            foreach (VideoClip videoClip in videoClips)
+            foreach (DataService videoClip in videoClips)
             {
                 videoClipsBindingList.Add(videoClip);
             }

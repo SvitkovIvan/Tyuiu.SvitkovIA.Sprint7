@@ -28,7 +28,7 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9.Test
         [TestMethod]
         public void AddVideoClip_ValidData_VideoClipAdded()
         {
-            VideoClip videoClip = new VideoClip
+            DataService videoClip = new DataService
             {
                 Code = " VC001 ",
                 Date = DateTime.Now,
@@ -48,7 +48,7 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9.Test
 
             Assert.AreEqual(1, videoLibrary.GetVideoClipsCount());
 
-            VideoClip addedVideoClip = videoLibrary.GetVideoClipByCode("VC001");
+            DataService addedVideoClip = videoLibrary.GetVideoClipByCode("VC001");
             Assert.IsNotNull(addedVideoClip);
             Assert.AreEqual(" Действие ", addedVideoClip.Theme);
         }
@@ -56,7 +56,7 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9.Test
         [TestMethod]
         public void AddVideoClip_InvalidData_VideoClipNotAdded()
         {
-            VideoClip videoClip = new VideoClip
+            DataService videoClip = new DataService
             {
                 Code = " VC002 ",
                 Date = DateTime.Now,
