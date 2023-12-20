@@ -41,6 +41,9 @@
             this.textBoxSearch_SIA = new System.Windows.Forms.TextBox();
             this.textBoxSearch1_SIA = new System.Windows.Forms.TextBox();
             this.textBoxSearch2_SIA = new System.Windows.Forms.TextBox();
+            this.textBoxFilter_SIA = new System.Windows.Forms.TextBox();
+            this.textBoxFilter1_SIA = new System.Windows.Forms.TextBox();
+            this.comboBoxFilter_SIA = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOpenFile_SIA)).BeginInit();
             this.SuspendLayout();
             // 
@@ -162,11 +165,41 @@
             this.textBoxSearch2_SIA.TabIndex = 10;
             this.textBoxSearch2_SIA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxSearch_SIA_KeyPress);
             // 
+            // textBoxFilter_SIA
+            // 
+            this.textBoxFilter_SIA.BackColor = System.Drawing.SystemColors.Info;
+            this.textBoxFilter_SIA.Location = new System.Drawing.Point(33, 171);
+            this.textBoxFilter_SIA.Name = "textBoxFilter_SIA";
+            this.textBoxFilter_SIA.Size = new System.Drawing.Size(125, 22);
+            this.textBoxFilter_SIA.TabIndex = 11;
+            this.textBoxFilter_SIA.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxFilter_SIA_KeyDown);
+            // 
+            // textBoxFilter1_SIA
+            // 
+            this.textBoxFilter1_SIA.BackColor = System.Drawing.SystemColors.Info;
+            this.textBoxFilter1_SIA.Location = new System.Drawing.Point(33, 209);
+            this.textBoxFilter1_SIA.Name = "textBoxFilter1_SIA";
+            this.textBoxFilter1_SIA.Size = new System.Drawing.Size(125, 22);
+            this.textBoxFilter1_SIA.TabIndex = 12;
+            this.textBoxFilter1_SIA.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxFilter_SIA_KeyUp);
+            // 
+            // comboBoxFilter_SIA
+            // 
+            this.comboBoxFilter_SIA.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.comboBoxFilter_SIA.FormattingEnabled = true;
+            this.comboBoxFilter_SIA.Location = new System.Drawing.Point(22, 262);
+            this.comboBoxFilter_SIA.Name = "comboBoxFilter_SIA";
+            this.comboBoxFilter_SIA.Size = new System.Drawing.Size(136, 24);
+            this.comboBoxFilter_SIA.TabIndex = 13;
+            // 
             // FormMain_SIA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.comboBoxFilter_SIA);
+            this.Controls.Add(this.textBoxFilter1_SIA);
+            this.Controls.Add(this.textBoxFilter_SIA);
             this.Controls.Add(this.textBoxSearch2_SIA);
             this.Controls.Add(this.textBoxSearch1_SIA);
             this.Controls.Add(this.textBoxSearch_SIA);
@@ -201,6 +234,9 @@
         private System.Windows.Forms.TextBox textBoxSearch_SIA;
         private System.Windows.Forms.TextBox textBoxSearch1_SIA;
         private System.Windows.Forms.TextBox textBoxSearch2_SIA;
+        private System.Windows.Forms.TextBox textBoxFilter_SIA;
+        private System.Windows.Forms.TextBox textBoxFilter1_SIA;
+        private System.Windows.Forms.ComboBox comboBoxFilter_SIA;
     }
 }
 

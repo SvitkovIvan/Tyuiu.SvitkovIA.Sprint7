@@ -221,8 +221,78 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
         }
 
         static string[,] mtrxSort;
+
+
+        private void textBoxFilter_SIA_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (dataGridViewOpenFile_SIA.RowCount != 0)
+            {
+                mtrxSearch = new string[dataGridViewOpenFile_SIA.RowCount, dataGridViewOpenFile_SIA.ColumnCount];
+                for (int i = 0; i < dataGridViewOpenFile_SIA.RowCount - 1; i++)
+                {
+                    for (int j = 0; j < dataGridViewOpenFile_SIA.ColumnCount - 1; j++)
+                    {
+                        mtrxSearch[i, j] = Convert.ToString(dataGridViewOpenFile_SIA.Rows[i].Cells[j].Value);
+                        dataGridViewOpenFile_SIA.Rows[i].Cells[j].Selected = false;
+                    }
+                }
+            }
+            else MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void textBoxFilter_SIA_KeyUp(object sender, KeyEventArgs e)
+        {
+            for (int i = 0; i < dataGridViewOpenFile_SIA.RowCount - 1; i++)
+            {
+                for (int j = 0; j < dataGridViewOpenFile_SIA.ColumnCount - 1; j++)
+                {
+                    dataGridViewOpenFile_SIA.Rows[i].Cells[j].Selected = false;
+                }
+            }
+            if (e.KeyCode == Keys.Enter)
+            {
+                for (int i = 0; i < dataGridViewOpenFile_SIA.RowCount - 1; i++)
+                {
+                    for (int j = 0; j < dataGridViewOpenFile_SIA.ColumnCount - 1; j++)
+                    {
+                        if (dataGridViewOpenFile_SIA.Rows[i].Cells[j].Value != null)
+                        {
+                            string elmnt = dataGridViewOpenFile_SIA.Rows[i].Cells[j].Value.ToString().ToLower();
+                            if (elmnt.Contains(comboBoxFilter_SIA.Text.ToLower())) dataGridViewOpenFile_SIA.Rows[i].Cells[j].Selected = true;
+                        }
+                    }
+                }
+
+                int clear = 0;
+                for (int r = 1; r < dataGridViewOpenFile_SIA.RowCount - 1; r++)
+                {
+                    for (int c = 0; c < dataGridViewOpenFile_SIA.ColumnCount - 1; c++)
+                    {
+                        if (dataGridViewOpenFile_SIA.Rows[r].Cells[c].Selected == true) clear += 1;
+                    }
+                    if (clear == 0) dataGridViewOpenFile_SIA.Rows[r].Visible = false;
+                    else
+                    {
+                        dataGridViewOpenFile_SIA.Rows[r].Visible = true;
+                        clear = 0;
+                    }
+                }
+                for (int i = 0; i < dataGridViewOpenFile_SIA.RowCount - 1; i++)
+                {
+                    for (int j = 0; j < dataGridViewOpenFile_SIA.ColumnCount - 1; j++)
+                    {
+                        dataGridViewOpenFile_SIA.Rows[i].Cells[j].Selected = false;
+                    }
+                }
+            }
+        }
+
+
+
+
     }
 }
+   
     
 
 
