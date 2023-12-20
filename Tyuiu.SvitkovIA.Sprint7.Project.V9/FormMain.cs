@@ -123,9 +123,113 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
 
         static string[,] mtrxSearch;
 
+        private void textBoxSearch_SIA_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (dataGridViewOpenFile_SIA.RowCount != 0)
+            {
+                mtrxSearch = new string[dataGridViewOpenFile_SIA.RowCount, dataGridViewOpenFile_SIA.ColumnCount];
+                for (int i = 0; i < dataGridViewOpenFile_SIA.RowCount - 1; i++)
+                {
+                    for (int j = 0; j < dataGridViewOpenFile_SIA.ColumnCount - 1; j++)
+                    {
+                        mtrxSearch[i, j] = Convert.ToString(dataGridViewOpenFile_SIA.Rows[i].Cells[j].Value);
+                        dataGridViewOpenFile_SIA.Rows[i].Cells[j].Selected = false;
+                    }
+                }
+            }
+            else MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
 
+        private void buttonAdd_SIA_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                dataGridViewOpenFile_SIA.Rows.Add();
+            }
+            catch
+            {
+                MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void buttonDelete_SIA_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewOpenFile_SIA.RowCount != 0)
+            {
+                int konechno = 0;
+                var result = MessageBox.Show($"{"Удалить данную строку?" + "\r"}{"Ее невозможно будет восстановить"}", "Внимание", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes) konechno = 1;
+                if (konechno == 1)
+                {
+                    int a = dataGridViewOpenFile_SIA.CurrentCell.RowIndex;
+                    dataGridViewOpenFile_SIA.Rows.Remove(dataGridViewOpenFile_SIA.Rows[a]);
+                }
+            }
+            else MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void textBoxSearch_SIA_KeyUp(object sender, KeyEventArgs e)
+        {
+            for (int i = 0; i < dataGridViewOpenFile_SIA.RowCount - 1; i++)
+            {
+                for (int j = 0; j < dataGridViewOpenFile_SIA.ColumnCount - 1; j++)
+                {
+                    dataGridViewOpenFile_SIA.Rows[i].Cells[j].Selected = false;
+                }
+            }
+            if (e.KeyCode == Keys.Enter)
+            {
+                for (int i = 0; i < dataGridViewOpenFile_SIA.RowCount - 1; i++)
+                {
+                    for (int j = 0; j < dataGridViewOpenFile_SIA.ColumnCount - 1; j++)
+                    {
+                        if (dataGridViewOpenFile_SIA.Rows[i].Cells[j].Value != null)
+                        {
+                            string elmnt = dataGridViewOpenFile_SIA.Rows[i].Cells[j].Value.ToString().ToLower();
+                            if (elmnt.Contains(textBoxSearch_SIA.Text.ToLower())) dataGridViewOpenFile_SIA.Rows[i].Cells[j].Selected = true;
+                        }
+                    }
+                }
+
+                int clear = 0;
+                for (int r = 1; r < dataGridViewOpenFile_SIA.RowCount - 1; r++)
+                {
+                    for (int c = 0; c < dataGridViewOpenFile_SIA.ColumnCount - 1; c++)
+                    {
+                        if (dataGridViewOpenFile_SIA.Rows[r].Cells[c].Selected == true) clear += 1;
+                    }
+                    if (clear == 0) dataGridViewOpenFile_SIA.Rows[r].Visible = false;
+                    else
+                    {
+                        dataGridViewOpenFile_SIA.Rows[r].Visible = true;
+                        clear = 0;
+                    }
+                }
+            }
+        }
+
+        private void textBoxSearch_SIA_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            for (int i = 0; i < dataGridViewOpenFile_SIA.RowCount - 1; i++)
+            {
+                for (int j = 0; j < dataGridViewOpenFile_SIA.ColumnCount - 1; j++)
+                {
+                    dataGridViewOpenFile_SIA.Rows[i].Cells[j].Value = mtrxSearch[i, j];
+                    dataGridViewOpenFile_SIA.Rows[i].Cells[j].Selected = false;
+                }
+            }
+        }
+
+        static string[,] mtrxSort;
     }
 }
+    
+
+
+        
+    
+
+
 
 
    

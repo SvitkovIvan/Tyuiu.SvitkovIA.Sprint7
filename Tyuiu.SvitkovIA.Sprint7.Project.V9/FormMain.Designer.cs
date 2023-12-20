@@ -36,6 +36,11 @@
             this.openFileDialog_SIA = new System.Windows.Forms.OpenFileDialog();
             this.сохранитьToolStripMenuItemFile_SIA = new System.Windows.Forms.Button();
             this.saveFileDialog_SIA = new System.Windows.Forms.SaveFileDialog();
+            this.buttonAdd_SIA = new System.Windows.Forms.Button();
+            this.buttonDelete_SIA = new System.Windows.Forms.Button();
+            this.textBoxSearch_SIA = new System.Windows.Forms.TextBox();
+            this.textBoxSearch1_SIA = new System.Windows.Forms.TextBox();
+            this.textBoxSearch2_SIA = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOpenFile_SIA)).BeginInit();
             this.SuspendLayout();
             // 
@@ -108,11 +113,65 @@
             this.сохранитьToolStripMenuItemFile_SIA.UseVisualStyleBackColor = false;
             this.сохранитьToolStripMenuItemFile_SIA.Click += new System.EventHandler(this.сохранитьToolStripMenuItemFile_SIA_Click);
             // 
+            // buttonAdd_SIA
+            // 
+            this.buttonAdd_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.buttonAdd_SIA.Location = new System.Drawing.Point(511, 209);
+            this.buttonAdd_SIA.Name = "buttonAdd_SIA";
+            this.buttonAdd_SIA.Size = new System.Drawing.Size(91, 36);
+            this.buttonAdd_SIA.TabIndex = 6;
+            this.buttonAdd_SIA.Text = "Добавить";
+            this.buttonAdd_SIA.UseVisualStyleBackColor = false;
+            this.buttonAdd_SIA.Click += new System.EventHandler(this.buttonAdd_SIA_Click);
+            // 
+            // buttonDelete_SIA
+            // 
+            this.buttonDelete_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonDelete_SIA.Location = new System.Drawing.Point(527, 272);
+            this.buttonDelete_SIA.Name = "buttonDelete_SIA";
+            this.buttonDelete_SIA.Size = new System.Drawing.Size(92, 39);
+            this.buttonDelete_SIA.TabIndex = 7;
+            this.buttonDelete_SIA.Text = "Удалить";
+            this.buttonDelete_SIA.UseVisualStyleBackColor = false;
+            this.buttonDelete_SIA.Click += new System.EventHandler(this.buttonDelete_SIA_Click);
+            // 
+            // textBoxSearch_SIA
+            // 
+            this.textBoxSearch_SIA.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBoxSearch_SIA.Location = new System.Drawing.Point(207, 314);
+            this.textBoxSearch_SIA.Name = "textBoxSearch_SIA";
+            this.textBoxSearch_SIA.Size = new System.Drawing.Size(212, 22);
+            this.textBoxSearch_SIA.TabIndex = 8;
+            // 
+            // textBoxSearch1_SIA
+            // 
+            this.textBoxSearch1_SIA.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBoxSearch1_SIA.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.textBoxSearch1_SIA.Location = new System.Drawing.Point(207, 342);
+            this.textBoxSearch1_SIA.Name = "textBoxSearch1_SIA";
+            this.textBoxSearch1_SIA.Size = new System.Drawing.Size(212, 22);
+            this.textBoxSearch1_SIA.TabIndex = 9;
+            this.textBoxSearch1_SIA.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxSearch_SIA_KeyUp);
+            // 
+            // textBoxSearch2_SIA
+            // 
+            this.textBoxSearch2_SIA.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBoxSearch2_SIA.Location = new System.Drawing.Point(207, 370);
+            this.textBoxSearch2_SIA.Name = "textBoxSearch2_SIA";
+            this.textBoxSearch2_SIA.Size = new System.Drawing.Size(212, 22);
+            this.textBoxSearch2_SIA.TabIndex = 10;
+            this.textBoxSearch2_SIA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxSearch_SIA_KeyPress);
+            // 
             // FormMain_SIA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBoxSearch2_SIA);
+            this.Controls.Add(this.textBoxSearch1_SIA);
+            this.Controls.Add(this.textBoxSearch_SIA);
+            this.Controls.Add(this.buttonDelete_SIA);
+            this.Controls.Add(this.buttonAdd_SIA);
             this.Controls.Add(this.сохранитьToolStripMenuItemFile_SIA);
             this.Controls.Add(this.dataGridViewOpenFile_SIA);
             this.Controls.Add(this.открытьToolStripMenuItemFile_SIA);
@@ -123,6 +182,7 @@
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOpenFile_SIA)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -136,6 +196,11 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog_SIA;
         private System.Windows.Forms.Button сохранитьToolStripMenuItemFile_SIA;
         private System.Windows.Forms.SaveFileDialog saveFileDialog_SIA;
+        private System.Windows.Forms.Button buttonAdd_SIA;
+        private System.Windows.Forms.Button buttonDelete_SIA;
+        private System.Windows.Forms.TextBox textBoxSearch_SIA;
+        private System.Windows.Forms.TextBox textBoxSearch1_SIA;
+        private System.Windows.Forms.TextBox textBoxSearch2_SIA;
     }
 }
 
