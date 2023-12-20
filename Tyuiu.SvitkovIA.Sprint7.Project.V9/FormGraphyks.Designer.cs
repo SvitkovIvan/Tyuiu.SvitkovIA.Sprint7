@@ -35,6 +35,8 @@
             this.saveFileDialog_SIA = new System.Windows.Forms.SaveFileDialog();
             this.dataGridViewGraphyks_SIA = new System.Windows.Forms.DataGridView();
             this.buttonSaveFile_SIA = new System.Windows.Forms.Button();
+            this.buttonDelete_SIA = new System.Windows.Forms.Button();
+            this.buttonAdd_SIA = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGraphyks_SIA)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,13 +96,37 @@
             this.buttonSaveFile_SIA.TabIndex = 4;
             this.buttonSaveFile_SIA.Text = "Cохранить \r\nфайл";
             this.buttonSaveFile_SIA.UseVisualStyleBackColor = false;
-            //this.buttonSaveFile_SIA.Click += new System.EventHandler(this.button1_Click);
+            this.buttonSaveFile_SIA.Click += new System.EventHandler(this.buttonSaveFile_SIA_Click);
+            // 
+            // buttonDelete_SIA
+            // 
+            this.buttonDelete_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.buttonDelete_SIA.Location = new System.Drawing.Point(74, 311);
+            this.buttonDelete_SIA.Name = "buttonDelete_SIA";
+            this.buttonDelete_SIA.Size = new System.Drawing.Size(78, 41);
+            this.buttonDelete_SIA.TabIndex = 5;
+            this.buttonDelete_SIA.Text = "Удалить";
+            this.buttonDelete_SIA.UseVisualStyleBackColor = false;
+            this.buttonDelete_SIA.Click += new System.EventHandler(this.buttonDelete_SIA_Click);
+            // 
+            // buttonAdd_SIA
+            // 
+            this.buttonAdd_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.buttonAdd_SIA.Location = new System.Drawing.Point(730, 314);
+            this.buttonAdd_SIA.Name = "buttonAdd_SIA";
+            this.buttonAdd_SIA.Size = new System.Drawing.Size(89, 38);
+            this.buttonAdd_SIA.TabIndex = 6;
+            this.buttonAdd_SIA.Text = "Добавить";
+            this.buttonAdd_SIA.UseVisualStyleBackColor = false;
+            this.buttonAdd_SIA.Click += new System.EventHandler(this.buttonAdd_SIA_Click);
             // 
             // FormGraphyks_SIA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(878, 450);
+            this.Controls.Add(this.buttonAdd_SIA);
+            this.Controls.Add(this.buttonDelete_SIA);
             this.Controls.Add(this.buttonSaveFile_SIA);
             this.Controls.Add(this.dataGridViewGraphyks_SIA);
             this.Controls.Add(this.сохранитьToolStripMenuItemGraphyks_SIA);
@@ -123,5 +149,7 @@
         private System.Windows.Forms.SaveFileDialog saveFileDialog_SIA;
         private System.Windows.Forms.DataGridView dataGridViewGraphyks_SIA;
         private System.Windows.Forms.Button buttonSaveFile_SIA;
+        private System.Windows.Forms.Button buttonDelete_SIA;
+        private System.Windows.Forms.Button buttonAdd_SIA;
     }
 }

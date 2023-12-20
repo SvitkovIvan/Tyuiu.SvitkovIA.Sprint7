@@ -80,15 +80,18 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
 
                 for (int i = 0; i < rows; i++)
                 {
-                    dataGridViewGraphyks_SIA.Columns[i].Width = 135;
+                    //dataGridViewOpenFile_URI.Columns[i].Width = 50;
                 }
+
                 for (int i = 0; i < rows; i++)
                 {
                     for (int j = 0; j < columns; j++)
                     {
                         dataGridViewGraphyks_SIA.Rows[i].Cells[j].Value = matrix[i, j];
+                        dataGridViewGraphyks_SIA.Rows[i].Cells[j].Selected = false;
                     }
                 }
+                dataGridViewGraphyks_SIA.AutoResizeColumns();
             }
             catch
             {
@@ -96,19 +99,35 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
             }
         }
 
-        private void buttonSaveFile_URI(object sender, EventArgs e)
+        private void buttonSaveFile_SIA_Click(object sender, EventArgs e)
         {
             try
             {
-                saveFileDialog_SIA.FileName = ".lsx";
+                saveFileDialog_SIA.FileName = ".csv";
                 saveFileDialog_SIA.InitialDirectory = @":C";
-                saveFileDialog_SIA.ShowDialog();
-                string path = saveFileDialog_SIA.FileName;
-                FileInfo fileInfo = new FileInfo(path);
-                bool fileExists = fileInfo.Exists;
-                if (fileExists)
+                if (saveFileDialog_SIA.ShowDialog() == DialogResult.OK)
                 {
-                    File.Delete(path);
+                    string savepath = saveFileDialog_SIA.FileName;
+
+                    if (File.Exists(savepath)) File.Delete(savepath);
+
+                    int rows = dataGridViewGraphyks_SIA.RowCount;
+                    int columns = dataGridViewGraphyks_SIA.ColumnCount;
+
+                    StringBuilder strBuilder = new StringBuilder();
+
+                    for (int i = 0; i < rows; i++)
+                    {
+                        for (int j = 0; j < columns; j++)
+                        {
+                            strBuilder.Append(dataGridViewGraphyks_SIA.Rows[i].Cells[j].Value);
+
+                            if (j != columns - 1) strBuilder.Append(";");
+                        }
+                        strBuilder.AppendLine();
+                    }
+                    File.WriteAllText(savepath, strBuilder.ToString(), Encoding.GetEncoding(1251));
+                    MessageBox.Show("Файл успешно сохранен", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             catch
@@ -116,8 +135,40 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
                 MessageBox.Show("Файл не сохранен", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-    }
 
+        private void buttonDelete_SIA_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewGraphyks_SIA.RowCount != 0)
+            {
+                int konechno = 0;
+                var result = MessageBox.Show($"{"Удалить данную строку?" + "\r"}{"Ее невозможно будет восстановить"}", "Внимание", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes) konechno = 1;
+                if (konechno == 1)
+                {
+                    int a = dataGridViewGraphyks_SIA.CurrentCell.RowIndex;
+                    dataGridViewGraphyks_SIA.Rows.Remove(dataGridViewGraphyks_SIA.Rows[a]);
+                }
+            }
+            else MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void buttonAdd_SIA_Click(object sender, EventArgs e)
+        {
+            try
+            {
+               dataGridViewGraphyks_SIA.Rows.Add();
+            }
+            catch
+            {
+                MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+    }
 }
     
+
+
+
+
+
 
