@@ -19,7 +19,7 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
         public FormMain_SIA()
         {
             InitializeComponent();
-            //openFileDialog_URI.Filter = "Значения, разделенные запятыми(*.csv)|*.csv|Всефайлы(*.*)|*.*";
+            
         }
 
 
@@ -65,7 +65,7 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
 
                 for (int i = 0; i < rows; i++)
                 {
-                    //dataGridViewOpenFile_URI.Columns[i].Width = 50;
+                    
                 }
 
                 for (int i = 0; i < rows; i++)
@@ -223,6 +223,10 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
         static string[,] mtrxSort;
 
 
+
+
+
+
         private void textBoxFilter_SIA_KeyDown(object sender, KeyEventArgs e)
         {
             if (dataGridViewOpenFile_SIA.RowCount != 0)
@@ -287,12 +291,62 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
             }
         }
 
+        private void comboBoxSort_SIA_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBoxSort_SIA.SelectedItem != null)
+            {
+                int columnIndex = 0;
+                int stolbets = 0;
+                for (int i = 0; i < dataGridViewOpenFile_SIA.ColumnCount - 1; i++)
+                {
+                    for (int j = 0; j < dataGridViewOpenFile_SIA.ColumnCount - 1; j++)
+                    {
+                        if (dataGridViewOpenFile_SIA.Rows[i].Cells[j].Value != null)
+                        {
+                            if (dataGridViewOpenFile_SIA.Rows[i].Cells[j].Selected == true)
+                            {
+                                columnIndex = j;
+                                stolbets = j;
+                                break;
+                            }
+                        }
+                        if (columnIndex > 0) break;
+                    }
+                    bool Num = true;
+
+                    foreach (DataGridViewRow row in dataGridViewOpenFile_SIA.Rows)
+                    {
+                        int cellValue;
+                        if (row.Cells[columnIndex].Value != null && int.TryParse(row.Cells[columnIndex].Value.ToString(), out cellValue))
+                        {
+                            row.Cells[columnIndex].Value = cellValue;
+                        }
+                        else
+                        {
+                            row.Cells[columnIndex].Value = 0;
+                            Num = false;
+                        }
+                    }
+                    if (Num)
+                    {
+                        DataGridViewColumn column = dataGridViewOpenFile_SIA.Columns[stolbets];
+                        string selectedItem = comboBoxSort_SIA.SelectedItem.ToString();
+
+                        if (selectedItem == "По возрастанию") dataGridViewOpenFile_SIA.Sort(column, ListSortDirection.Ascending);
+                        if (selectedItem == "По убыванию") dataGridViewOpenFile_SIA.Sort(column, ListSortDirection.Descending);
+                    }
+                    
+                }
+            }
+        }
+
+        static string[,] mtrxFilter;
 
 
 
     }
 }
-   
+
     
 
 

@@ -44,6 +44,7 @@
             this.textBoxFilter_SIA = new System.Windows.Forms.TextBox();
             this.textBoxFilter1_SIA = new System.Windows.Forms.TextBox();
             this.comboBoxFilter_SIA = new System.Windows.Forms.ComboBox();
+            this.comboBoxSort_SIA = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOpenFile_SIA)).BeginInit();
             this.SuspendLayout();
             // 
@@ -192,11 +193,22 @@
             this.comboBoxFilter_SIA.Size = new System.Drawing.Size(136, 24);
             this.comboBoxFilter_SIA.TabIndex = 13;
             // 
+            // comboBoxSort_SIA
+            // 
+            this.comboBoxSort_SIA.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.comboBoxSort_SIA.FormattingEnabled = true;
+            this.comboBoxSort_SIA.Location = new System.Drawing.Point(608, 133);
+            this.comboBoxSort_SIA.Name = "comboBoxSort_SIA";
+            this.comboBoxSort_SIA.Size = new System.Drawing.Size(166, 24);
+            this.comboBoxSort_SIA.TabIndex = 14;
+            this.comboBoxSort_SIA.SelectedIndexChanged += new System.EventHandler(this.comboBoxSort_SIA_SelectedIndexChanged);
+            // 
             // FormMain_SIA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.comboBoxSort_SIA);
             this.Controls.Add(this.comboBoxFilter_SIA);
             this.Controls.Add(this.textBoxFilter1_SIA);
             this.Controls.Add(this.textBoxFilter_SIA);
@@ -237,6 +249,7 @@
         private System.Windows.Forms.TextBox textBoxFilter_SIA;
         private System.Windows.Forms.TextBox textBoxFilter1_SIA;
         private System.Windows.Forms.ComboBox comboBoxFilter_SIA;
+        private System.Windows.Forms.ComboBox comboBoxSort_SIA;
     }
 }
 
