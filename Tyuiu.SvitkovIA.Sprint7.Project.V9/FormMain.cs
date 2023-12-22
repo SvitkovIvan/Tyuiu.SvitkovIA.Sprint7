@@ -19,7 +19,7 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
         public FormMain_SIA()
         {
             InitializeComponent();
-            
+
         }
 
 
@@ -65,7 +65,7 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
 
                 for (int i = 0; i < rows; i++)
                 {
-                    
+
                 }
 
                 for (int i = 0; i < rows; i++)
@@ -220,7 +220,7 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
             }
         }
 
-        static string[,] mtrxSort;
+        
 
 
 
@@ -335,18 +335,79 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
                         if (selectedItem == "По возрастанию") dataGridViewOpenFile_SIA.Sort(column, ListSortDirection.Ascending);
                         if (selectedItem == "По убыванию") dataGridViewOpenFile_SIA.Sort(column, ListSortDirection.Descending);
                     }
-                    
+
                 }
             }
         }
 
-        static string[,] mtrxFilter;
+        
+
+        private void textBoxQuantity_SIA_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                int nugno = -1;
+                for (int i = 0; i < dataGridViewOpenFile_SIA.RowCount - 1; i++)
+                {
+                    for (int j = 0; j < dataGridViewOpenFile_SIA.ColumnCount - 1; j++)
+                    {
+                        int cellCalue;
+                        if (dataGridViewOpenFile_SIA.Rows[i].Cells[j].Selected == true && int.TryParse(dataGridViewOpenFile_SIA.Rows[i].Cells[j].Value.ToString(), out cellCalue))
+                        {
+                            nugno = j;
+                            break;
+                        }
+                    }
+                    if (nugno > 0) break;
+                }
+
+                int counter = 0;
+                if (nugno > 0)
+                {
+                    for (int r = 1; r < dataGridViewOpenFile_SIA.RowCount - 1; r++) counter++;
+                    textBoxQuantity_SIA.Text = Convert.ToString(counter);
+                }
+            }
+        }
+
+        private void textBoxSum_SIA_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                int nugno = -1;
+                for (int i = 0; i < dataGridViewOpenFile_SIA.RowCount - 1; i++)
+                {
+                    for (int j = 0; j < dataGridViewOpenFile_SIA.ColumnCount - 1; j++)
+                    {
+                        int cellCalue;
+                        if (dataGridViewOpenFile_SIA.Rows[i].Cells[j].Selected == true && int.TryParse(dataGridViewOpenFile_SIA.Rows[i].Cells[j].Value.ToString(), out cellCalue))
+                        {
+                            nugno = j;
+                            break;
+                        }
+                    }
+                    if (nugno > 0) break;
+                }
+
+                int sum = 0;
+                if (nugno > 0)
+                {
+                    for (int r = 1; r < dataGridViewOpenFile_SIA.RowCount - 1; r++)
+                    {
+                        string elmnt = dataGridViewOpenFile_SIA.Rows[r].Cells[nugno].Value.ToString();
+                        if (elmnt.Contains(",")) elmnt.Replace(",", ".");
+                        sum += Convert.ToInt32(elmnt);
+                    }
+                    
+                    textBoxSum_SIA.Text = Convert.ToString(sum);
+                }
+            }
+        }
 
 
 
     }
 }
-
     
 
 

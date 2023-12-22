@@ -45,6 +45,8 @@
             this.textBoxFilter1_SIA = new System.Windows.Forms.TextBox();
             this.comboBoxFilter_SIA = new System.Windows.Forms.ComboBox();
             this.comboBoxSort_SIA = new System.Windows.Forms.ComboBox();
+            this.textBoxQuantity_SIA = new System.Windows.Forms.TextBox();
+            this.textBoxSum_SIA = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOpenFile_SIA)).BeginInit();
             this.SuspendLayout();
             // 
@@ -203,11 +205,31 @@
             this.comboBoxSort_SIA.TabIndex = 14;
             this.comboBoxSort_SIA.SelectedIndexChanged += new System.EventHandler(this.comboBoxSort_SIA_SelectedIndexChanged);
             // 
+            // textBoxQuantity_SIA
+            // 
+            this.textBoxQuantity_SIA.BackColor = System.Drawing.SystemColors.Highlight;
+            this.textBoxQuantity_SIA.Location = new System.Drawing.Point(12, 58);
+            this.textBoxQuantity_SIA.Name = "textBoxQuantity_SIA";
+            this.textBoxQuantity_SIA.Size = new System.Drawing.Size(146, 22);
+            this.textBoxQuantity_SIA.TabIndex = 15;
+            this.textBoxQuantity_SIA.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxQuantity_SIA_KeyUp);
+            // 
+            // textBoxSum_SIA
+            // 
+            this.textBoxSum_SIA.BackColor = System.Drawing.SystemColors.Highlight;
+            this.textBoxSum_SIA.Location = new System.Drawing.Point(12, 85);
+            this.textBoxSum_SIA.Name = "textBoxSum_SIA";
+            this.textBoxSum_SIA.Size = new System.Drawing.Size(146, 22);
+            this.textBoxSum_SIA.TabIndex = 16;
+            this.textBoxSum_SIA.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxSum_SIA_KeyUp);
+            // 
             // FormMain_SIA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBoxSum_SIA);
+            this.Controls.Add(this.textBoxQuantity_SIA);
             this.Controls.Add(this.comboBoxSort_SIA);
             this.Controls.Add(this.comboBoxFilter_SIA);
             this.Controls.Add(this.textBoxFilter1_SIA);
@@ -250,6 +272,8 @@
         private System.Windows.Forms.TextBox textBoxFilter1_SIA;
         private System.Windows.Forms.ComboBox comboBoxFilter_SIA;
         private System.Windows.Forms.ComboBox comboBoxSort_SIA;
+        private System.Windows.Forms.TextBox textBoxQuantity_SIA;
+        private System.Windows.Forms.TextBox textBoxSum_SIA;
     }
 }
 
