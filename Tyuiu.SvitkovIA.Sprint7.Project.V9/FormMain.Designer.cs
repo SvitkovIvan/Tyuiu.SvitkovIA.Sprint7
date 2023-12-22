@@ -47,6 +47,9 @@
             this.comboBoxSort_SIA = new System.Windows.Forms.ComboBox();
             this.textBoxQuantity_SIA = new System.Windows.Forms.TextBox();
             this.textBoxSum_SIA = new System.Windows.Forms.TextBox();
+            this.textBoxMiddleValue_SIA = new System.Windows.Forms.TextBox();
+            this.textBoxMinValue_SIA = new System.Windows.Forms.TextBox();
+            this.textBoxMaxValue_SIA = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOpenFile_SIA)).BeginInit();
             this.SuspendLayout();
             // 
@@ -223,11 +226,41 @@
             this.textBoxSum_SIA.TabIndex = 16;
             this.textBoxSum_SIA.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxSum_SIA_KeyUp);
             // 
+            // textBoxMiddleValue_SIA
+            // 
+            this.textBoxMiddleValue_SIA.BackColor = System.Drawing.Color.RosyBrown;
+            this.textBoxMiddleValue_SIA.Location = new System.Drawing.Point(272, 399);
+            this.textBoxMiddleValue_SIA.Name = "textBoxMiddleValue_SIA";
+            this.textBoxMiddleValue_SIA.Size = new System.Drawing.Size(159, 22);
+            this.textBoxMiddleValue_SIA.TabIndex = 17;
+            this.textBoxMiddleValue_SIA.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxMiddleValue_SIA_KeyUp);
+            // 
+            // textBoxMinValue_SIA
+            // 
+            this.textBoxMinValue_SIA.BackColor = System.Drawing.Color.RosyBrown;
+            this.textBoxMinValue_SIA.Location = new System.Drawing.Point(272, 427);
+            this.textBoxMinValue_SIA.Name = "textBoxMinValue_SIA";
+            this.textBoxMinValue_SIA.Size = new System.Drawing.Size(159, 22);
+            this.textBoxMinValue_SIA.TabIndex = 18;
+            this.textBoxMinValue_SIA.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxMinValue_SIA_KeyUp);
+            // 
+            // textBoxMaxValue_SIA
+            // 
+            this.textBoxMaxValue_SIA.BackColor = System.Drawing.Color.RosyBrown;
+            this.textBoxMaxValue_SIA.Location = new System.Drawing.Point(437, 416);
+            this.textBoxMaxValue_SIA.Name = "textBoxMaxValue_SIA";
+            this.textBoxMaxValue_SIA.Size = new System.Drawing.Size(159, 22);
+            this.textBoxMaxValue_SIA.TabIndex = 19;
+            this.textBoxMaxValue_SIA.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxMaxValue_SIA_KeyUp);
+            // 
             // FormMain_SIA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(670, 450);
+            this.Controls.Add(this.textBoxMaxValue_SIA);
+            this.Controls.Add(this.textBoxMinValue_SIA);
+            this.Controls.Add(this.textBoxMiddleValue_SIA);
             this.Controls.Add(this.textBoxSum_SIA);
             this.Controls.Add(this.textBoxQuantity_SIA);
             this.Controls.Add(this.comboBoxSort_SIA);
@@ -274,6 +307,9 @@
         private System.Windows.Forms.ComboBox comboBoxSort_SIA;
         private System.Windows.Forms.TextBox textBoxQuantity_SIA;
         private System.Windows.Forms.TextBox textBoxSum_SIA;
+        private System.Windows.Forms.TextBox textBoxMiddleValue_SIA;
+        private System.Windows.Forms.TextBox textBoxMinValue_SIA;
+        private System.Windows.Forms.TextBox textBoxMaxValue_SIA;
     }
 }
 
