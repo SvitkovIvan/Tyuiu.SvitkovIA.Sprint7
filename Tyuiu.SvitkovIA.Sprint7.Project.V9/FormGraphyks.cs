@@ -80,7 +80,7 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
 
                 for (int i = 0; i < rows; i++)
                 {
-                    //dataGridViewOpenFile_URI.Columns[i].Width = 50;
+                    
                 }
 
                 for (int i = 0; i < rows; i++)

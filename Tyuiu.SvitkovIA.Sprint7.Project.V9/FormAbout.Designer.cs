@@ -34,9 +34,9 @@
             // buttonOK_SIA
             // 
             this.buttonOK_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.buttonOK_SIA.Location = new System.Drawing.Point(645, 372);
+            this.buttonOK_SIA.Location = new System.Drawing.Point(646, 377);
             this.buttonOK_SIA.Name = "buttonOK_SIA";
-            this.buttonOK_SIA.Size = new System.Drawing.Size(100, 39);
+            this.buttonOK_SIA.Size = new System.Drawing.Size(131, 52);
             this.buttonOK_SIA.TabIndex = 0;
             this.buttonOK_SIA.Text = "ОК";
             this.buttonOK_SIA.UseVisualStyleBackColor = false;
@@ -46,7 +46,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(782, 450);
             this.Controls.Add(this.buttonOK_SIA);
             this.Name = "FormAbout";
             this.Text = "FormAbout";
