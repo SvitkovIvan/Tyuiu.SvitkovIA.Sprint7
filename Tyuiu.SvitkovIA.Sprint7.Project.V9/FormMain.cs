@@ -33,14 +33,14 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
         private void перейтиКРазделуToolStripMenuItem_SIA_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormGraphyks formGraphyks = new FormGraphyks();
+            FormGraphyks_SIA formGraphyks = new FormGraphyks_SIA();
             formGraphyks.Show();
         }
 
         private void открытьToolStripMenuItemGuied_SIA_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormGuied formGuied = new FormGuied();
+            FormGuied_SIA formGuied = new FormGuied_SIA();
             formGuied.Show();
         }
 
