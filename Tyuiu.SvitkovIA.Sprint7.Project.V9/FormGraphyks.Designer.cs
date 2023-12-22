@@ -37,6 +37,7 @@
             this.buttonSaveFile_SIA = new System.Windows.Forms.Button();
             this.buttonDelete_SIA = new System.Windows.Forms.Button();
             this.buttonAdd_SIA = new System.Windows.Forms.Button();
+            this.открытьToolStripMenuItemGuied_SIA = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGraphyks_SIA)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,9 +70,9 @@
             // сохранитьToolStripMenuItemGraphyks_SIA
             // 
             this.сохранитьToolStripMenuItemGraphyks_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.сохранитьToolStripMenuItemGraphyks_SIA.Location = new System.Drawing.Point(364, 380);
+            this.сохранитьToolStripMenuItemGraphyks_SIA.Location = new System.Drawing.Point(364, 395);
             this.сохранитьToolStripMenuItemGraphyks_SIA.Name = "сохранитьToolStripMenuItemGraphyks_SIA";
-            this.сохранитьToolStripMenuItemGraphyks_SIA.Size = new System.Drawing.Size(157, 58);
+            this.сохранитьToolStripMenuItemGraphyks_SIA.Size = new System.Drawing.Size(157, 43);
             this.сохранитьToolStripMenuItemGraphyks_SIA.TabIndex = 2;
             this.сохранитьToolStripMenuItemGraphyks_SIA.Text = "Сохранить";
             this.сохранитьToolStripMenuItemGraphyks_SIA.UseVisualStyleBackColor = false;
@@ -90,9 +91,9 @@
             // buttonSaveFile_SIA
             // 
             this.buttonSaveFile_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.buttonSaveFile_SIA.Location = new System.Drawing.Point(364, 314);
+            this.buttonSaveFile_SIA.Location = new System.Drawing.Point(364, 343);
             this.buttonSaveFile_SIA.Name = "buttonSaveFile_SIA";
-            this.buttonSaveFile_SIA.Size = new System.Drawing.Size(157, 60);
+            this.buttonSaveFile_SIA.Size = new System.Drawing.Size(157, 46);
             this.buttonSaveFile_SIA.TabIndex = 4;
             this.buttonSaveFile_SIA.Text = "Cохранить \r\nфайл";
             this.buttonSaveFile_SIA.UseVisualStyleBackColor = false;
@@ -120,11 +121,23 @@
             this.buttonAdd_SIA.UseVisualStyleBackColor = false;
             this.buttonAdd_SIA.Click += new System.EventHandler(this.buttonAdd_SIA_Click);
             // 
+            // открытьToolStripMenuItemGuied_SIA
+            // 
+            this.открытьToolStripMenuItemGuied_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.открытьToolStripMenuItemGuied_SIA.Location = new System.Drawing.Point(364, 296);
+            this.открытьToolStripMenuItemGuied_SIA.Name = "открытьToolStripMenuItemGuied_SIA";
+            this.открытьToolStripMenuItemGuied_SIA.Size = new System.Drawing.Size(157, 41);
+            this.открытьToolStripMenuItemGuied_SIA.TabIndex = 7;
+            this.открытьToolStripMenuItemGuied_SIA.Text = "Открыть";
+            this.открытьToolStripMenuItemGuied_SIA.UseVisualStyleBackColor = false;
+            this.открытьToolStripMenuItemGuied_SIA.Click += new System.EventHandler(this.открытьToolStripMenuItemGuied_SIA_Click);
+            // 
             // FormGraphyks_SIA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(871, 450);
+            this.Controls.Add(this.открытьToolStripMenuItemGuied_SIA);
             this.Controls.Add(this.buttonAdd_SIA);
             this.Controls.Add(this.buttonDelete_SIA);
             this.Controls.Add(this.buttonSaveFile_SIA);
@@ -151,5 +164,6 @@
         private System.Windows.Forms.Button buttonSaveFile_SIA;
         private System.Windows.Forms.Button buttonDelete_SIA;
         private System.Windows.Forms.Button buttonAdd_SIA;
+        private System.Windows.Forms.Button открытьToolStripMenuItemGuied_SIA;
     }
 }

@@ -33,6 +33,8 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
             formMain.Show();
         }
 
+
+
         private void FormGraphyks_SIA_Load(object sender, EventArgs e)
         {
             this.Hide();
@@ -140,14 +142,45 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
         {
             if (dataGridViewGraphyks_SIA.RowCount != 0)
             {
-                int konechno = 0;
-                var result = MessageBox.Show($"{"Удалить данную строку?" + "\r"}{"Ее невозможно будет восстановить"}", "Внимание", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (result == DialogResult.Yes) konechno = 1;
-                if (konechno == 1)
+                int nugno = -1; int udal = 0;
+                for (int i = 0; i < dataGridViewGraphyks_SIA.RowCount - 1; i++)
                 {
-                    int a = dataGridViewGraphyks_SIA.CurrentCell.RowIndex;
-                    dataGridViewGraphyks_SIA.Rows.Remove(dataGridViewGraphyks_SIA.Rows[a]);
+                    for (int j = 0; j < dataGridViewGraphyks_SIA.ColumnCount - 1; j++)
+                    {
+                        if (dataGridViewGraphyks_SIA.Rows[i].Cells[j].Selected == true)
+                        {
+                            nugno = j;
+                            break;
+                        }
+                    }
+                    if (nugno > -1) udal++;
                 }
+                if (nugno > -1)
+                {
+                    var result = MessageBox.Show($"{"Удалить данную строку?" + "\r"}{"Ее невозможно будет восстановить"}", "Внимание", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
+                        int k = -1;
+                        for (int i = 0; i < dataGridViewGraphyks_SIA.RowCount - 1; i++)
+                        {
+                            if (dataGridViewGraphyks_SIA.Rows[i].Cells[nugno].Selected == true)
+                            {
+                                k = i;
+                                break;
+                            }
+                            if (k > -1) break;
+                        }
+                        for (int r = 0; r < udal; r++) dataGridViewGraphyks_SIA.Rows.Remove(dataGridViewGraphyks_SIA.Rows[k]);
+                        for (int i = 0; i < dataGridViewGraphyks_SIA.RowCount - 1; i++)
+                        {
+                            for (int j = 0; j < dataGridViewGraphyks_SIA.ColumnCount - 1; j++)
+                            {
+                                dataGridViewGraphyks_SIA.Rows[i].Cells[j].Selected = false;
+                            }
+                        }
+                    }
+                }
+                else MessageBox.Show("Выберите строку, которую ходите удалить", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
@@ -162,6 +195,12 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
             {
                 MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void открытьToolStripMenuItemGuied_SIA_Click(object sender, EventArgs e)
+        {
+            FormGuied_SIA formGuied = new FormGuied_SIA();
+            formGuied.Show();
         }
     }
 }
