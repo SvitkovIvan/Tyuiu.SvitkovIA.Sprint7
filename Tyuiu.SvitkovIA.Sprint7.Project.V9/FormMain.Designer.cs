@@ -50,6 +50,7 @@
             this.textBoxMiddleValue_SIA = new System.Windows.Forms.TextBox();
             this.textBoxMinValue_SIA = new System.Windows.Forms.TextBox();
             this.textBoxMaxValue_SIA = new System.Windows.Forms.TextBox();
+            this.buttonFilter_SIA = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOpenFile_SIA)).BeginInit();
             this.SuspendLayout();
             // 
@@ -253,11 +254,23 @@
             this.textBoxMaxValue_SIA.TabIndex = 19;
             this.textBoxMaxValue_SIA.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxMaxValue_SIA_KeyUp);
             // 
+            // buttonFilter_SIA
+            // 
+            this.buttonFilter_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.buttonFilter_SIA.Location = new System.Drawing.Point(86, 409);
+            this.buttonFilter_SIA.Name = "buttonFilter_SIA";
+            this.buttonFilter_SIA.Size = new System.Drawing.Size(97, 37);
+            this.buttonFilter_SIA.TabIndex = 20;
+            this.buttonFilter_SIA.Text = "Фильтр";
+            this.buttonFilter_SIA.UseVisualStyleBackColor = false;
+            this.buttonFilter_SIA.Click += new System.EventHandler(this.buttonFilter_SIA_Click);
+            // 
             // FormMain_SIA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(670, 450);
+            this.Controls.Add(this.buttonFilter_SIA);
             this.Controls.Add(this.textBoxMaxValue_SIA);
             this.Controls.Add(this.textBoxMinValue_SIA);
             this.Controls.Add(this.textBoxMiddleValue_SIA);
@@ -310,6 +323,7 @@
         private System.Windows.Forms.TextBox textBoxMiddleValue_SIA;
         private System.Windows.Forms.TextBox textBoxMinValue_SIA;
         private System.Windows.Forms.TextBox textBoxMaxValue_SIA;
+        private System.Windows.Forms.Button buttonFilter_SIA;
     }
 }
 
