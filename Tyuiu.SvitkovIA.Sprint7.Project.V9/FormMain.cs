@@ -846,8 +846,29 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
             else MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        private void buttonSort_SIA_Click(object sender, EventArgs e)
+        {
+            {
+                
+                if (dataGridViewOpenFile_SIA.RowCount != 0 && tralivali != 0)
+                {
+                    for (int i = 0; i < dataGridViewOpenFile_SIA.RowCount - 1; i++)
+                    {
+                        for (int j = 0; j < dataGridViewOpenFile_SIA.ColumnCount - 1; j++)
+                        {
+                            dataGridViewOpenFile_SIA.Rows[i].Cells[j].Value = mtrxSort[i, j];
+                            dataGridViewOpenFile_SIA.Rows[i].Cells[j].Selected = false;
+                        }
+                    }
+                }
+                else if (dataGridViewOpenFile_SIA.RowCount != 0 && tralivali == 0) MessageBox.Show("А надо было нажимать на пустое поле ввода сортировки", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+                
+            }
+            
 
+        }
     }
 }
            

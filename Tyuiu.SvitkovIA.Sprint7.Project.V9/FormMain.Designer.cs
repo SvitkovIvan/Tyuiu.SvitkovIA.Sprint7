@@ -51,6 +51,7 @@
             this.textBoxMinValue_SIA = new System.Windows.Forms.TextBox();
             this.textBoxMaxValue_SIA = new System.Windows.Forms.TextBox();
             this.buttonFilter_SIA = new System.Windows.Forms.Button();
+            this.buttonSort_SIA = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOpenFile_SIA)).BeginInit();
             this.SuspendLayout();
             // 
@@ -265,11 +266,23 @@
             this.buttonFilter_SIA.UseVisualStyleBackColor = false;
             this.buttonFilter_SIA.Click += new System.EventHandler(this.buttonFilter_SIA_Click);
             // 
+            // buttonSort_SIA
+            // 
+            this.buttonSort_SIA.BackColor = System.Drawing.Color.Maroon;
+            this.buttonSort_SIA.Location = new System.Drawing.Point(247, 294);
+            this.buttonSort_SIA.Name = "buttonSort_SIA";
+            this.buttonSort_SIA.Size = new System.Drawing.Size(116, 34);
+            this.buttonSort_SIA.TabIndex = 21;
+            this.buttonSort_SIA.Text = "Сортировка";
+            this.buttonSort_SIA.UseVisualStyleBackColor = false;
+            this.buttonSort_SIA.Click += new System.EventHandler(this.buttonSort_SIA_Click);
+            // 
             // FormMain_SIA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(670, 450);
+            this.Controls.Add(this.buttonSort_SIA);
             this.Controls.Add(this.buttonFilter_SIA);
             this.Controls.Add(this.textBoxMaxValue_SIA);
             this.Controls.Add(this.textBoxMinValue_SIA);
@@ -324,6 +337,7 @@
         private System.Windows.Forms.TextBox textBoxMinValue_SIA;
         private System.Windows.Forms.TextBox textBoxMaxValue_SIA;
         private System.Windows.Forms.Button buttonFilter_SIA;
+        private System.Windows.Forms.Button buttonSort_SIA;
     }
 }
 
