@@ -36,9 +36,9 @@
             // buttonOK_SIA
             // 
             this.buttonOK_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.buttonOK_SIA.Location = new System.Drawing.Point(646, 377);
+            this.buttonOK_SIA.Location = new System.Drawing.Point(635, 370);
             this.buttonOK_SIA.Name = "buttonOK_SIA";
-            this.buttonOK_SIA.Size = new System.Drawing.Size(131, 52);
+            this.buttonOK_SIA.Size = new System.Drawing.Size(142, 59);
             this.buttonOK_SIA.TabIndex = 0;
             this.buttonOK_SIA.Text = "ОК";
             this.buttonOK_SIA.UseVisualStyleBackColor = false;
@@ -48,7 +48,7 @@
             // 
             this.pictureBoxInformation_SIA.Location = new System.Drawing.Point(24, 27);
             this.pictureBoxInformation_SIA.Name = "pictureBoxInformation_SIA";
-            this.pictureBoxInformation_SIA.Size = new System.Drawing.Size(435, 303);
+            this.pictureBoxInformation_SIA.Size = new System.Drawing.Size(514, 387);
             this.pictureBoxInformation_SIA.TabIndex = 1;
             this.pictureBoxInformation_SIA.TabStop = false;
             // 
