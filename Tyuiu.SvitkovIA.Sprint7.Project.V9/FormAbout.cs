@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using Tyuiu.SvitkovIA.Sprint7.Project.V9.Lib;
 
 namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
 {
