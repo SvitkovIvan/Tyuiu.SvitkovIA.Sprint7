@@ -15,6 +15,7 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
         public FormAbout()
         {
             InitializeComponent();
+            pictureBoxInformation_SIA.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void buttonOK_SIA_Click(object sender, EventArgs e)
