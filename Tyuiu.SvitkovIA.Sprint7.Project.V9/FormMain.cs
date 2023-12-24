@@ -240,38 +240,7 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
 
         static string[,] mtrxSort;
         static int tralivali = 0;
-        private void comboBoxSort_URI_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (dataGridViewOpenFile_SIA.RowCount != 0)
-            {
-                mtrxSort = new string[dataGridViewOpenFile_SIA.RowCount, dataGridViewOpenFile_SIA.ColumnCount];
-                for (int i = 0; i < dataGridViewOpenFile_SIA.RowCount - 1; i++)
-                {
-                    for (int j = 0; j < dataGridViewOpenFile_SIA.ColumnCount - 1; j++)
-                    {
-                        mtrxSort[i, j] = Convert.ToString(dataGridViewOpenFile_SIA.Rows[i].Cells[j].Value);
-                    }
-                }
-                tralivali++;
-
-                int vozmogno = 0; int k = -1;
-                for (int i = 1; i < dataGridViewOpenFile_SIA.RowCount - 1; i++)
-                {
-                    for (int j = 0; j < dataGridViewOpenFile_SIA.ColumnCount; j++)
-                    {
-                        if (dataGridViewOpenFile_SIA.Rows[i].Cells[j].Value == null) vozmogno++;
-                    }
-                    if (vozmogno == dataGridViewOpenFile_SIA.ColumnCount)
-                    {
-                        k = i;
-                        break;
-                    }
-                    else vozmogno = 0;
-                }
-                if (k > 0) MessageBox.Show("Пожалуйста, удалите все пустые строки, кроме последней", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        }
+        
 
         private void textBoxSearch_SIA_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -869,6 +838,44 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
             
 
         }
+
+        private void comboBoxSort_SIA_KeyDown(object sender, KeyEventArgs e)
+        {
+            {
+                if (dataGridViewOpenFile_SIA.RowCount != 0)
+                {
+                    mtrxSort = new string[dataGridViewOpenFile_SIA.RowCount, dataGridViewOpenFile_SIA.ColumnCount];
+                    for (int i = 0; i < dataGridViewOpenFile_SIA.RowCount - 1; i++)
+                    {
+                        for (int j = 0; j < dataGridViewOpenFile_SIA.ColumnCount - 1; j++)
+                        {
+                            mtrxSort[i, j] = Convert.ToString(dataGridViewOpenFile_SIA.Rows[i].Cells[j].Value);
+                        }
+                    }
+                    tralivali++;
+
+                    int vozmogno = 0; int k = -1;
+                    for (int i = 1; i < dataGridViewOpenFile_SIA.RowCount - 1; i++)
+                    {
+                        for (int j = 0; j < dataGridViewOpenFile_SIA.ColumnCount; j++)
+                        {
+                            if (dataGridViewOpenFile_SIA.Rows[i].Cells[j].Value == null) vozmogno++;
+                        }
+                        if (vozmogno == dataGridViewOpenFile_SIA.ColumnCount)
+                        {
+                            k = i;
+                            break;
+                        }
+                        else vozmogno = 0;
+                    }
+                    if (k > 0) MessageBox.Show("Пожалуйста, удалите все пустые строки, кроме последней", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+
     }
 }
            

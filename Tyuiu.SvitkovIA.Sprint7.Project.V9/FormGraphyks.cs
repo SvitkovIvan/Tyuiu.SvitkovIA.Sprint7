@@ -74,7 +74,7 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
         static int columns;
         static string[,] matrix;
         DataService ds = new DataService();
-        private void buttonOpenFile_URI_Click(object sender, EventArgs e)
+        private void buttonOpenFile_SIA_Click(object sender, EventArgs e)
         {
             try
             {
@@ -112,9 +112,9 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
                 MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-    
 
-                private void buttonSaveFile_SIA_Click(object sender, EventArgs e)
+
+        private void buttonSaveFile_SIA_Click(object sender, EventArgs e)
         {
             try
             {
@@ -151,66 +151,14 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
             }
         }
 
-        private void buttonDelete_SIA_Click(object sender, EventArgs e)
-        {
-            if (dataGridViewGraphyks_SIA.RowCount != 0)
-            {
-                int nugno = -1;
-                for (int i = 0; i < dataGridViewGraphyks_SIA.RowCount - 1; i++)
-                {
-                    for (int j = 0; j < dataGridViewGraphyks_SIA.ColumnCount - 1; j++)
-                    {
-                        if (dataGridViewGraphyks_SIA.Rows[i].Cells[j].Selected == true)
-                        {
-                            nugno = j;
-                            break;
-                        }
-                    }
-                    if (nugno > -1) break;
-                }
-                if (nugno > -1)
-                {
-                    if (dataGridViewGraphyks_SIA.Rows[0].Cells[nugno].Selected == true) MessageBox.Show("Первую строку нельзя удалить", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    else
-                    {
-                        var result = MessageBox.Show($"{"Удалить данную строку?" + "\r"}{"Ее невозможно будет восстановить"}", "Внимание", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                        if (result == DialogResult.Yes)
-                        {
-                            int k = -1; int udal = 0;
-                            for (int i = 1; i < dataGridViewGraphyks_SIA.RowCount - 1; i++)
-                            {
-                                if (dataGridViewGraphyks_SIA.Rows[i].Cells[nugno].Selected == true)
-                                {
-                                    k = i;
-                                    break;
-                                }
-                                if (k > -1) break;
-                            }
-                            for (int i = 1; i < dataGridViewGraphyks_SIA.RowCount - 1; i++)
-                            {
-                                if (dataGridViewGraphyks_SIA.Rows[i].Cells[nugno].Selected == true) udal++;
-                            }
-                            for (int r = 0; r < udal; r++) dataGridViewGraphyks_SIA.Rows.Remove(dataGridViewGraphyks_SIA.Rows[k]);
-                            for (int i = 0; i < dataGridViewGraphyks_SIA.RowCount - 1; i++)
-                            {
-                                for (int j = 0; j < dataGridViewGraphyks_SIA.ColumnCount - 1; j++)
-                                {
-                                    dataGridViewGraphyks_SIA.Rows[i].Cells[j].Selected = false;    
-                                }
-                            }
-                        }
-                    }
-                }
-                else MessageBox.Show("Выберите строку, которую ходите удалить", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        }
+
+
 
         private void buttonAdd_SIA_Click(object sender, EventArgs e)
         {
             try
             {
-               dataGridViewGraphyks_SIA.Rows.Add();
+                dataGridViewGraphyks_SIA.Rows.Add();
             }
             catch
             {
@@ -288,7 +236,7 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
                 else MessageBox.Show("Нет данных для построения графика", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            
+
         }
 
         private void buttonDeleteGraphyks_SIA_Click(object sender, EventArgs e)
@@ -296,8 +244,121 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
             if (dataGridViewGraphyks_SIA.RowCount != 0) chartFunction_SIA.Series[0].Points.Clear();
             else MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
+        private void buttonOpenFile_SIA_Click_1(object sender, EventArgs e)
+        {
+            {
+                if (dataGridViewGraphyks_SIA.RowCount != 0)
+                {
+                    int nugno = -1;
+                    for (int i = 0; i < dataGridViewGraphyks_SIA.RowCount - 1; i++)
+                    {
+                        for (int j = 0; j < dataGridViewGraphyks_SIA.ColumnCount - 1; j++)
+                        {
+                            if (dataGridViewGraphyks_SIA.Rows[i].Cells[j].Selected == true)
+                            {
+                                nugno = j;
+                                break;
+                            }
+                        }
+                        if (nugno > -1) break;
+                    }
+                    if (nugno > -1)
+                    {
+                        if (dataGridViewGraphyks_SIA.Rows[0].Cells[nugno].Selected == true) MessageBox.Show("Первую строку нельзя удалить", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        else
+                        {
+                            var result = MessageBox.Show($"{"Удалить данную строку?" + "\r"}{"Ее невозможно будет восстановить"}", "Внимание", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                            if (result == DialogResult.Yes)
+                            {
+                                int k = -1; int udal = 0;
+                                for (int i = 1; i < dataGridViewGraphyks_SIA.RowCount - 1; i++)
+                                {
+                                    if (dataGridViewGraphyks_SIA.Rows[i].Cells[nugno].Selected == true)
+                                    {
+                                        k = i;
+                                        break;
+                                    }
+                                    if (k > -1) break;
+                                }
+                                for (int i = 1; i < dataGridViewGraphyks_SIA.RowCount - 1; i++)
+                                {
+                                    if (dataGridViewGraphyks_SIA.Rows[i].Cells[nugno].Selected == true) udal++;
+                                }
+                                for (int r = 0; r < udal; r++) dataGridViewGraphyks_SIA.Rows.Remove(dataGridViewGraphyks_SIA.Rows[k]);
+                                for (int i = 0; i < dataGridViewGraphyks_SIA.RowCount - 1; i++)
+                                {
+                                    for (int j = 0; j < dataGridViewGraphyks_SIA.ColumnCount - 1; j++)
+                                    {
+                                        dataGridViewGraphyks_SIA.Rows[i].Cells[j].Selected = false;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    else MessageBox.Show("Выберите строку, которую ходите удалить", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void buttonDelete_SIA_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewGraphyks_SIA.RowCount != 0)
+            {
+                int nugno = -1;
+                for (int i = 0; i < dataGridViewGraphyks_SIA.RowCount - 1; i++)
+                {
+                    for (int j = 0; j < dataGridViewGraphyks_SIA.ColumnCount - 1; j++)
+                    {
+                        if (dataGridViewGraphyks_SIA.Rows[i].Cells[j].Selected == true)
+                        {
+                            nugno = j;
+                            break;
+                        }
+                    }
+                    if (nugno > -1) break;
+                }
+                if (nugno > -1)
+                {
+                    if (dataGridViewGraphyks_SIA.Rows[0].Cells[nugno].Selected == true) MessageBox.Show("Первую строку нельзя удалить", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    else
+                    {
+                        var result = MessageBox.Show($"{"Удалить данную строку?" + "\r"}{"Ее невозможно будет восстановить"}", "Внимание", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            int k = -1; int udal = 0;
+                            for (int i = 1; i < dataGridViewGraphyks_SIA.RowCount - 1; i++)
+                            {
+                                if (dataGridViewGraphyks_SIA.Rows[i].Cells[nugno].Selected == true)
+                                {
+                                    k = i;
+                                    break;
+                                }
+                                if (k > -1) break;
+                            }
+                            for (int i = 1; i < dataGridViewGraphyks_SIA.RowCount - 1; i++)
+                            {
+                                if (dataGridViewGraphyks_SIA.Rows[i].Cells[nugno].Selected == true) udal++;
+                            }
+                            for (int r = 0; r < udal; r++) dataGridViewGraphyks_SIA.Rows.Remove(dataGridViewGraphyks_SIA.Rows[k]);
+                            for (int i = 0; i < dataGridViewGraphyks_SIA.RowCount - 1; i++)
+                            {
+                                for (int j = 0; j < dataGridViewGraphyks_SIA.ColumnCount - 1; j++)
+                                {
+                                    dataGridViewGraphyks_SIA.Rows[i].Cells[j].Selected = false;
+                                }
+                            }
+                        }
+                    }
+                }
+                else MessageBox.Show("Выберите строку, которую ходите удалить", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
     }
 }
+
     
 
 

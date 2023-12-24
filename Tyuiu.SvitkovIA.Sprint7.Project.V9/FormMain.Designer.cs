@@ -199,6 +199,7 @@
             this.comboBoxFilter_SIA.Name = "comboBoxFilter_SIA";
             this.comboBoxFilter_SIA.Size = new System.Drawing.Size(154, 24);
             this.comboBoxFilter_SIA.TabIndex = 13;
+            this.comboBoxFilter_SIA.KeyDown += new System.Windows.Forms.KeyEventHandler(this.comboBoxSort_SIA_KeyDown);
             // 
             // comboBoxSort_SIA
             // 

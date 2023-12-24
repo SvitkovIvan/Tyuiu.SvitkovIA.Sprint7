@@ -44,6 +44,7 @@
             this.chartFunction_SIA = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.buttonDeleteGraphyks_SIA = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.buttonOpenFile_SIA = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGraphyks_SIA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartFunction_SIA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -191,11 +192,24 @@
             this.splitContainer1.Size = new System.Drawing.Size(150, 100);
             this.splitContainer1.TabIndex = 11;
             // 
+            // buttonOpenFile_SIA
+            // 
+            this.buttonOpenFile_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonOpenFile_SIA.Location = new System.Drawing.Point(940, 398);
+            this.buttonOpenFile_SIA.Name = "buttonOpenFile_SIA";
+            this.buttonOpenFile_SIA.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.buttonOpenFile_SIA.Size = new System.Drawing.Size(186, 49);
+            this.buttonOpenFile_SIA.TabIndex = 12;
+            this.buttonOpenFile_SIA.Text = "Открыть файл";
+            this.buttonOpenFile_SIA.UseVisualStyleBackColor = false;
+            this.buttonOpenFile_SIA.Click += new System.EventHandler(this.buttonOpenFile_SIA_Click_1);
+            // 
             // FormGraphyks_SIA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1138, 621);
+            this.Controls.Add(this.buttonOpenFile_SIA);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.buttonDeleteGraphyks_SIA);
             this.Controls.Add(this.chartFunction_SIA);
@@ -235,5 +249,6 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chartFunction_SIA;
         private System.Windows.Forms.Button buttonDeleteGraphyks_SIA;
         private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.Button buttonOpenFile_SIA;
     }
 }
