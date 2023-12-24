@@ -35,9 +35,9 @@
             // toolStripMenuItemBack_SIA
             // 
             this.toolStripMenuItemBack_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.toolStripMenuItemBack_SIA.Location = new System.Drawing.Point(12, 370);
+            this.toolStripMenuItemBack_SIA.Location = new System.Drawing.Point(12, 359);
             this.toolStripMenuItemBack_SIA.Name = "toolStripMenuItemBack_SIA";
-            this.toolStripMenuItemBack_SIA.Size = new System.Drawing.Size(155, 68);
+            this.toolStripMenuItemBack_SIA.Size = new System.Drawing.Size(169, 79);
             this.toolStripMenuItemBack_SIA.TabIndex = 0;
             this.toolStripMenuItemBack_SIA.Text = "Назад";
             this.toolStripMenuItemBack_SIA.UseVisualStyleBackColor = false;
@@ -46,9 +46,9 @@
             // toolStripMenuItemHelp_SIA
             // 
             this.toolStripMenuItemHelp_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.toolStripMenuItemHelp_SIA.Location = new System.Drawing.Point(619, 370);
+            this.toolStripMenuItemHelp_SIA.Location = new System.Drawing.Point(611, 359);
             this.toolStripMenuItemHelp_SIA.Name = "toolStripMenuItemHelp_SIA";
-            this.toolStripMenuItemHelp_SIA.Size = new System.Drawing.Size(169, 68);
+            this.toolStripMenuItemHelp_SIA.Size = new System.Drawing.Size(177, 79);
             this.toolStripMenuItemHelp_SIA.TabIndex = 1;
             this.toolStripMenuItemHelp_SIA.Text = "Помощь";
             this.toolStripMenuItemHelp_SIA.UseVisualStyleBackColor = false;
@@ -62,7 +62,7 @@
             this.Controls.Add(this.toolStripMenuItemHelp_SIA);
             this.Controls.Add(this.toolStripMenuItemBack_SIA);
             this.Name = "FormGuied_SIA";
-            this.Text = "FormGuied";
+            this.Text = "FormGuied_SIA";
             this.Load += new System.EventHandler(this.FormGuied_SIA_Load);
             this.ResumeLayout(false);
 
