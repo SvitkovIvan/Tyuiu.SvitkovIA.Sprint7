@@ -185,6 +185,7 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.AccessibleName = "splitContainerFunction_SIA";
+           // this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
             // 
             // splitContainer1.Panel2
             // 
