@@ -48,6 +48,8 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
             formMain.Show();
         }
 
+
+
         private void сохранитьToolStripMenuItemGraphyks_SIA_Click(object sender, EventArgs e)
         {
             try
@@ -74,7 +76,11 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
         static int columns;
         static string[,] matrix;
         DataService ds = new DataService();
-        private void buttonOpenFile_SIA_Click(object sender, EventArgs e)
+
+        
+
+
+            private void buttonOpenFile_SIA_Click(object sender, EventArgs e)
         {
             try
             {
@@ -172,78 +178,9 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
             formGuied.Show();
         }
 
-        private void buttonAddGraphyks_SIA_Click(object sender, EventArgs e)
-        {
-            if (dataGridViewGraphyks_SIA.RowCount != 0)
-            {
-                if (dataGridViewGraphyks_SIA.RowCount > 2)
-                {
-                    int nugno = -1;
-                    for (int i = 0; i < dataGridViewGraphyks_SIA.RowCount - 1; i++)
-                    {
-                        for (int j = 0; j < dataGridViewGraphyks_SIA.ColumnCount - 1; j++)
-                        {
-                            if (dataGridViewGraphyks_SIA.Rows[i].Cells[j].Value != null)
-                            {
-                                if (dataGridViewGraphyks_SIA.Rows[i].Cells[j].Selected == true)
-                                {
-                                    nugno = j;
-                                    break;
-                                }
-                            }
-                            if (nugno > -1) break;
-                        }
-                    }
 
-                    if (nugno > -1)
-                    {
-                        int kaktak = 0;
-                        for (int i = 0; i < dataGridViewGraphyks_SIA.RowCount - 1; i++)
-                        {
-                            if (dataGridViewGraphyks_SIA.Rows[i].Cells[0].Selected == true) kaktak++;
-                        }
-                        if (kaktak == 0)
-                        {
-                            int nadopodumati = 0;
-                            for (int i = 1; i < dataGridViewGraphyks_SIA.RowCount - 1; i++)
-                            {
-                                if (dataGridViewGraphyks_SIA.Rows[i].Cells[nugno].Value != null)
-                                {
-                                    double cellValue;
-                                    if (double.TryParse(dataGridViewGraphyks_SIA.Rows[i].Cells[nugno].Value.ToString(), out cellValue)) nadopodumati += 0;
-                                    else if (dataGridViewGraphyks_SIA.Rows[i].Cells[nugno].ValueType.ToString().Any(char.IsLetter)) nadopodumati++;
-                                }
-                            }
-                            if (nadopodumati == 0)
-                            {
-                                this.chartFunction_SIA.ChartAreas[0].AxisX.Title = "ID";
-                                string name = Convert.ToString(dataGridViewGraphyks_SIA.Rows[0].Cells[nugno].Value);
-                                this.chartFunction_SIA.ChartAreas[0].AxisY.Title = name;
 
-                                int startValue = Convert.ToInt32(dataGridViewGraphyks_SIA.Rows[1].Cells[0].Value);
-                                for (int i = 1; i < dataGridViewGraphyks_SIA.RowCount - 1; i++)
-                                {
-                                    this.chartFunction_SIA.Series[0].Points.AddXY(startValue, Convert.ToDouble(dataGridViewGraphyks_SIA.Rows[i].Cells[nugno].Value));
-                                    startValue++;
-                                }
-                            }
-                            else MessageBox.Show("Пожалуйста, выберите столбец с числами!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
-                        else MessageBox.Show("Нельзя выбрать первый столбец", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    else MessageBox.Show("Не выбран столбец", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else MessageBox.Show("Нет данных для построения графика", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-        }
-
-        private void buttonDeleteGraphyks_SIA_Click(object sender, EventArgs e)
-        {
-            if (dataGridViewGraphyks_SIA.RowCount != 0) chartFunction_SIA.Series[0].Points.Clear();
-            else MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        }
+        
 
         private void buttonOpenFile_SIA_Click_1(object sender, EventArgs e)
         {
@@ -357,11 +294,82 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
             else MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
-        
-    }
-}
+        private void buttonAddGraphyks_SIA_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewGraphyks_SIA.RowCount != 0)
+            {
+                if (dataGridViewGraphyks_SIA.RowCount > 2)
+                {
+                    int nugno = -1;
+                    for (int i = 0; i < dataGridViewGraphyks_SIA.RowCount - 1; i++)
+                    {
+                        for (int j = 0; j < dataGridViewGraphyks_SIA.ColumnCount - 1; j++)
+                        {
+                            if (dataGridViewGraphyks_SIA.Rows[i].Cells[j].Value != null)
+                            {
+                                if (dataGridViewGraphyks_SIA.Rows[i].Cells[j].Selected == true)
+                                {
+                                    nugno = j;
+                                    break;
+                                }
+                            }
+                            if (nugno > -1) break;
+                        }
+                    }
 
-    
+                    if (nugno > -1)
+                    {
+                        int kaktak = 0;
+                        for (int i = 0; i < dataGridViewGraphyks_SIA.RowCount - 1; i++)
+                        {
+                            if (dataGridViewGraphyks_SIA.Rows[i].Cells[0].Selected == true) kaktak++;
+                        }
+                        if (kaktak == 0)
+                        {
+                            int nadopodumati = 0;
+                            for (int i = 1; i < dataGridViewGraphyks_SIA.RowCount - 1; i++)
+                            {
+                                if (dataGridViewGraphyks_SIA.Rows[i].Cells[nugno].Value != null)
+                                {
+                                    double cellValue;
+                                    if (double.TryParse(dataGridViewGraphyks_SIA.Rows[i].Cells[nugno].Value.ToString(), out cellValue)) nadopodumati += 0;
+                                    else if (dataGridViewGraphyks_SIA.Rows[i].Cells[nugno].ValueType.ToString().Any(char.IsLetter)) nadopodumati++;
+                                }
+                            }
+                            if (nadopodumati == 0)
+                            {
+                                this.chartFunction_SIA.ChartAreas[0].AxisX.Title = "ID";
+                                string name = Convert.ToString(dataGridViewGraphyks_SIA.Rows[0].Cells[nugno].Value);
+                                this.chartFunction_SIA.ChartAreas[0].AxisY.Title = name;
+
+                                int startValue = Convert.ToInt32(dataGridViewGraphyks_SIA.Rows[1].Cells[0].Value);
+                                for (int i = 1; i < dataGridViewGraphyks_SIA.RowCount - 1; i++)
+                                {
+                                    this.chartFunction_SIA.Series[0].Points.AddXY(startValue, Convert.ToDouble(dataGridViewGraphyks_SIA.Rows[i].Cells[nugno].Value));
+                                    startValue++;
+                                }
+                            }
+                            else MessageBox.Show("Пожалуйста, выберите столбец с числами!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        else MessageBox.Show("Нельзя выбрать первый столбец", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else MessageBox.Show("Не выбран столбец", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else MessageBox.Show("Нет данных для построения графика", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void buttonDeleteGraphyks_SIA_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewGraphyks_SIA.RowCount != 0) chartFunction_SIA.Series[0].Points.Clear();
+            else MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+        }
+    }
+    }
+
+       
 
 
 

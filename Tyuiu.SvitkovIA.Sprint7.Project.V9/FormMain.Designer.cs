@@ -306,7 +306,7 @@
             this.Controls.Add(this.перейтиКРазделуToolStripMenuItem_SIA);
             this.Controls.Add(this.toolStripMenuItemHelp_SIA);
             this.Name = "FormMain_SIA";
-            this.Text = "FormMain_SIA";
+            this.Text = "Главное меню";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOpenFile_SIA)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

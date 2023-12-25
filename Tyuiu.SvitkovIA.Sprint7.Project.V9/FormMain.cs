@@ -830,7 +830,7 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
                         }
                     }
                 }
-                else if (dataGridViewOpenFile_SIA.RowCount != 0 && tralivali == 0) MessageBox.Show("А надо было нажимать на пустое поле ввода сортировки", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else if (dataGridViewOpenFile_SIA.RowCount != 0 && tralivali == 0) MessageBox.Show("Нажмите на пустое поле ввода сортировки вверху", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 else MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 

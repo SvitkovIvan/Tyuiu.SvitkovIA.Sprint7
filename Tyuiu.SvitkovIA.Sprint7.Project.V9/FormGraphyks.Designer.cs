@@ -28,27 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.openFileDialog_SIA = new System.Windows.Forms.OpenFileDialog();
             this.toolStripMenuItemHelp_SIA = new System.Windows.Forms.Button();
             this.toolStripMenuItemBack_SIA = new System.Windows.Forms.Button();
             this.сохранитьToolStripMenuItemGraphyks_SIA = new System.Windows.Forms.Button();
             this.saveFileDialog_SIA = new System.Windows.Forms.SaveFileDialog();
             this.dataGridViewGraphyks_SIA = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonSaveFile_SIA = new System.Windows.Forms.Button();
             this.buttonDelete_SIA = new System.Windows.Forms.Button();
             this.buttonAdd_SIA = new System.Windows.Forms.Button();
             this.открытьToolStripMenuItemGuied_SIA = new System.Windows.Forms.Button();
-            this.buttonAddGraphyks_SIA = new System.Windows.Forms.Button();
-            this.chartFunction_SIA = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.buttonDeleteGraphyks_SIA = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.buttonOpenFile_SIA = new System.Windows.Forms.Button();
+            this.chartFunction_SIA = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.buttonAddGraphyks_SIA = new System.Windows.Forms.Button();
+            this.buttonDeleteGraphyks_SIA = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGraphyks_SIA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartFunction_SIA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartFunction_SIA)).BeginInit();
             this.SuspendLayout();
             // 
             // openFileDialog_SIA
@@ -62,7 +72,7 @@
             this.toolStripMenuItemHelp_SIA.Name = "toolStripMenuItemHelp_SIA";
             this.toolStripMenuItemHelp_SIA.Size = new System.Drawing.Size(186, 41);
             this.toolStripMenuItemHelp_SIA.TabIndex = 0;
-            this.toolStripMenuItemHelp_SIA.Text = "Помощь";
+            this.toolStripMenuItemHelp_SIA.Text = "Справка";
             this.toolStripMenuItemHelp_SIA.UseVisualStyleBackColor = false;
             this.toolStripMenuItemHelp_SIA.Click += new System.EventHandler(this.toolStripMenuItemHelp_SIA_Click);
             // 
@@ -91,12 +101,85 @@
             // dataGridViewGraphyks_SIA
             // 
             this.dataGridViewGraphyks_SIA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewGraphyks_SIA.Location = new System.Drawing.Point(172, 12);
+            this.dataGridViewGraphyks_SIA.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8,
+            this.Column9});
+            this.dataGridViewGraphyks_SIA.Location = new System.Drawing.Point(450, 12);
             this.dataGridViewGraphyks_SIA.Name = "dataGridViewGraphyks_SIA";
             this.dataGridViewGraphyks_SIA.RowHeadersWidth = 51;
             this.dataGridViewGraphyks_SIA.RowTemplate.Height = 24;
-            this.dataGridViewGraphyks_SIA.Size = new System.Drawing.Size(954, 270);
+            this.dataGridViewGraphyks_SIA.Size = new System.Drawing.Size(676, 270);
             this.dataGridViewGraphyks_SIA.TabIndex = 3;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Column1";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Column2";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 125;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Column3";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Column4";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 125;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Column5";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 125;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Column6";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 125;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Column7";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 125;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Column8";
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            this.Column8.Width = 125;
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "Column9";
+            this.Column9.MinimumWidth = 6;
+            this.Column9.Name = "Column9";
+            this.Column9.Width = 125;
             // 
             // buttonSaveFile_SIA
             // 
@@ -142,41 +225,6 @@
             this.открытьToolStripMenuItemGuied_SIA.UseVisualStyleBackColor = false;
             this.открытьToolStripMenuItemGuied_SIA.Click += new System.EventHandler(this.открытьToolStripMenuItemGuied_SIA_Click);
             // 
-            // buttonAddGraphyks_SIA
-            // 
-            this.buttonAddGraphyks_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.buttonAddGraphyks_SIA.Location = new System.Drawing.Point(10, 120);
-            this.buttonAddGraphyks_SIA.Name = "buttonAddGraphyks_SIA";
-            this.buttonAddGraphyks_SIA.Size = new System.Drawing.Size(156, 68);
-            this.buttonAddGraphyks_SIA.TabIndex = 8;
-            this.buttonAddGraphyks_SIA.Text = "Добавить \r\nГрафик";
-            this.buttonAddGraphyks_SIA.UseVisualStyleBackColor = false;
-            this.buttonAddGraphyks_SIA.Click += new System.EventHandler(this.buttonAddGraphyks_SIA_Click);
-            // 
-            // chartFunction_SIA
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.chartFunction_SIA.ChartAreas.Add(chartArea1);
-            this.chartFunction_SIA.Location = new System.Drawing.Point(12, 302);
-            this.chartFunction_SIA.Name = "chartFunction_SIA";
-            series1.ChartArea = "ChartArea1";
-            series1.Name = "Series1";
-            this.chartFunction_SIA.Series.Add(series1);
-            this.chartFunction_SIA.Size = new System.Drawing.Size(496, 290);
-            this.chartFunction_SIA.TabIndex = 9;
-            this.chartFunction_SIA.Text = "chart1";
-            // 
-            // buttonDeleteGraphyks_SIA
-            // 
-            this.buttonDeleteGraphyks_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.buttonDeleteGraphyks_SIA.Location = new System.Drawing.Point(10, 194);
-            this.buttonDeleteGraphyks_SIA.Name = "buttonDeleteGraphyks_SIA";
-            this.buttonDeleteGraphyks_SIA.Size = new System.Drawing.Size(156, 76);
-            this.buttonDeleteGraphyks_SIA.TabIndex = 10;
-            this.buttonDeleteGraphyks_SIA.Text = "Удалить \r\nграфик";
-            this.buttonDeleteGraphyks_SIA.UseVisualStyleBackColor = false;
-            this.buttonDeleteGraphyks_SIA.Click += new System.EventHandler(this.buttonDeleteGraphyks_SIA_Click);
-            // 
             // splitContainer1
             // 
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
@@ -185,7 +233,6 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.AccessibleName = "splitContainerFunction_SIA";
-           // this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
             // 
             // splitContainer1.Panel2
             // 
@@ -205,16 +252,55 @@
             this.buttonOpenFile_SIA.UseVisualStyleBackColor = false;
             this.buttonOpenFile_SIA.Click += new System.EventHandler(this.buttonOpenFile_SIA_Click_1);
             // 
+            // chartFunction_SIA
+            // 
+            chartArea2.Name = "ChartArea1";
+            this.chartFunction_SIA.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartFunction_SIA.Legends.Add(legend2);
+            this.chartFunction_SIA.Location = new System.Drawing.Point(12, 302);
+            this.chartFunction_SIA.Name = "chartFunction_SIA";
+            this.chartFunction_SIA.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartFunction_SIA.Series.Add(series2);
+            this.chartFunction_SIA.Size = new System.Drawing.Size(490, 300);
+            this.chartFunction_SIA.TabIndex = 13;
+            this.chartFunction_SIA.Text = "chart1";
+            // 
+            // buttonAddGraphyks_SIA
+            // 
+            this.buttonAddGraphyks_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAddGraphyks_SIA.Location = new System.Drawing.Point(181, 108);
+            this.buttonAddGraphyks_SIA.Name = "buttonAddGraphyks_SIA";
+            this.buttonAddGraphyks_SIA.Size = new System.Drawing.Size(138, 65);
+            this.buttonAddGraphyks_SIA.TabIndex = 14;
+            this.buttonAddGraphyks_SIA.Text = "Добавить \r\nграфик";
+            this.buttonAddGraphyks_SIA.UseVisualStyleBackColor = true;
+            this.buttonAddGraphyks_SIA.Click += new System.EventHandler(this.buttonAddGraphyks_SIA_Click);
+            // 
+            // buttonDeleteGraphyks_SIA
+            // 
+            this.buttonDeleteGraphyks_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDeleteGraphyks_SIA.Location = new System.Drawing.Point(181, 179);
+            this.buttonDeleteGraphyks_SIA.Name = "buttonDeleteGraphyks_SIA";
+            this.buttonDeleteGraphyks_SIA.Size = new System.Drawing.Size(138, 57);
+            this.buttonDeleteGraphyks_SIA.TabIndex = 15;
+            this.buttonDeleteGraphyks_SIA.Text = "Удалить \r\nграфик";
+            this.buttonDeleteGraphyks_SIA.UseVisualStyleBackColor = true;
+            this.buttonDeleteGraphyks_SIA.Click += new System.EventHandler(this.buttonDeleteGraphyks_SIA_Click);
+            // 
             // FormGraphyks_SIA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1138, 621);
+            this.ClientSize = new System.Drawing.Size(1153, 630);
+            this.Controls.Add(this.buttonDeleteGraphyks_SIA);
+            this.Controls.Add(this.buttonAddGraphyks_SIA);
+            this.Controls.Add(this.chartFunction_SIA);
             this.Controls.Add(this.buttonOpenFile_SIA);
             this.Controls.Add(this.splitContainer1);
-            this.Controls.Add(this.buttonDeleteGraphyks_SIA);
-            this.Controls.Add(this.chartFunction_SIA);
-            this.Controls.Add(this.buttonAddGraphyks_SIA);
             this.Controls.Add(this.открытьToolStripMenuItemGuied_SIA);
             this.Controls.Add(this.buttonAdd_SIA);
             this.Controls.Add(this.buttonDelete_SIA);
@@ -227,9 +313,9 @@
             this.Text = "FormGraphyks_SIA";
             this.Load += new System.EventHandler(this.FormGraphyks_SIA_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGraphyks_SIA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartFunction_SIA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chartFunction_SIA)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -246,10 +332,19 @@
         private System.Windows.Forms.Button buttonDelete_SIA;
         private System.Windows.Forms.Button buttonAdd_SIA;
         private System.Windows.Forms.Button открытьToolStripMenuItemGuied_SIA;
-        private System.Windows.Forms.Button buttonAddGraphyks_SIA;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartFunction_SIA;
-        private System.Windows.Forms.Button buttonDeleteGraphyks_SIA;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Button buttonOpenFile_SIA;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartFunction_SIA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.Button buttonAddGraphyks_SIA;
+        private System.Windows.Forms.Button buttonDeleteGraphyks_SIA;
     }
 }
