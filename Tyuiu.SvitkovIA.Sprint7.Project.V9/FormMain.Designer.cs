@@ -313,7 +313,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(654, 641);
+            this.ClientSize = new System.Drawing.Size(670, 651);
             this.Controls.Add(this.buttonQuantity_SIA);
             this.Controls.Add(this.buttonSum_SIA);
             this.Controls.Add(this.buttonMiddleValue_SIA);

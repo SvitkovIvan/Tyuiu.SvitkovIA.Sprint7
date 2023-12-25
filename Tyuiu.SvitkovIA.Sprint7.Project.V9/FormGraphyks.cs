@@ -342,7 +342,7 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
             else MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
-        private void buttonDeleteGraphyks_SIA_Click(object sender, EventArgs e)
+            private void buttonDeleteGraphyks_SIA_Click(object sender, EventArgs e)
         {
             if (dataGridViewGraphyks_SIA.RowCount != 0) chartFunction_SIA.Series[0].Points.Clear();
             else MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);

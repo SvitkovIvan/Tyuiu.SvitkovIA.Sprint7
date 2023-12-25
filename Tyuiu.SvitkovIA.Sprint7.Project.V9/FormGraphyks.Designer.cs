@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.openFileDialog_SIA = new System.Windows.Forms.OpenFileDialog();
             this.toolStripMenuItemHelp_SIA = new System.Windows.Forms.Button();
@@ -264,13 +263,10 @@
             // 
             chartArea1.Name = "ChartArea1";
             this.chartFunction_SIA.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartFunction_SIA.Legends.Add(legend1);
             this.chartFunction_SIA.Location = new System.Drawing.Point(12, 302);
             this.chartFunction_SIA.Name = "chartFunction_SIA";
-            this.chartFunction_SIA.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
+            this.chartFunction_SIA.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chartFunction_SIA.Series.Add(series1);
             this.chartFunction_SIA.Size = new System.Drawing.Size(490, 300);

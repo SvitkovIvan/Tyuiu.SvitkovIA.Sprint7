@@ -74,7 +74,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(871, 497);
+            this.ClientSize = new System.Drawing.Size(877, 503);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBoxInformation_SIA);
             this.Controls.Add(this.buttonOK_SIA);
