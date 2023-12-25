@@ -81,7 +81,7 @@
             // 
             this.toolStripMenuItemBack_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.toolStripMenuItemBack_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.toolStripMenuItemBack_SIA.Location = new System.Drawing.Point(532, 527);
+            this.toolStripMenuItemBack_SIA.Location = new System.Drawing.Point(532, 484);
             this.toolStripMenuItemBack_SIA.Name = "toolStripMenuItemBack_SIA";
             this.toolStripMenuItemBack_SIA.Size = new System.Drawing.Size(157, 55);
             this.toolStripMenuItemBack_SIA.TabIndex = 1;
@@ -93,11 +93,11 @@
             // 
             this.сохранитьToolStripMenuItemGraphyks_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.сохранитьToolStripMenuItemGraphyks_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.сохранитьToolStripMenuItemGraphyks_SIA.Location = new System.Drawing.Point(532, 302);
+            this.сохранитьToolStripMenuItemGraphyks_SIA.Location = new System.Drawing.Point(181, 242);
             this.сохранитьToolStripMenuItemGraphyks_SIA.Name = "сохранитьToolStripMenuItemGraphyks_SIA";
-            this.сохранитьToolStripMenuItemGraphyks_SIA.Size = new System.Drawing.Size(157, 43);
+            this.сохранитьToolStripMenuItemGraphyks_SIA.Size = new System.Drawing.Size(138, 54);
             this.сохранитьToolStripMenuItemGraphyks_SIA.TabIndex = 2;
-            this.сохранитьToolStripMenuItemGraphyks_SIA.Text = "Сохранить";
+            this.сохранитьToolStripMenuItemGraphyks_SIA.Text = "Сохранить график";
             this.сохранитьToolStripMenuItemGraphyks_SIA.UseVisualStyleBackColor = false;
             this.сохранитьToolStripMenuItemGraphyks_SIA.Click += new System.EventHandler(this.сохранитьToolStripMenuItemGraphyks_SIA_Click);
             // 
@@ -200,7 +200,7 @@
             // 
             this.buttonDelete_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.buttonDelete_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDelete_SIA.Location = new System.Drawing.Point(532, 467);
+            this.buttonDelete_SIA.Location = new System.Drawing.Point(532, 424);
             this.buttonDelete_SIA.Name = "buttonDelete_SIA";
             this.buttonDelete_SIA.Size = new System.Drawing.Size(157, 54);
             this.buttonDelete_SIA.TabIndex = 5;
@@ -212,7 +212,7 @@
             // 
             this.buttonAdd_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.buttonAdd_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAdd_SIA.Location = new System.Drawing.Point(532, 412);
+            this.buttonAdd_SIA.Location = new System.Drawing.Point(532, 369);
             this.buttonAdd_SIA.Name = "buttonAdd_SIA";
             this.buttonAdd_SIA.Size = new System.Drawing.Size(157, 49);
             this.buttonAdd_SIA.TabIndex = 6;
@@ -224,7 +224,7 @@
             // 
             this.открытьToolStripMenuItemGuied_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.открытьToolStripMenuItemGuied_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.открытьToolStripMenuItemGuied_SIA.Location = new System.Drawing.Point(532, 351);
+            this.открытьToolStripMenuItemGuied_SIA.Location = new System.Drawing.Point(532, 308);
             this.открытьToolStripMenuItemGuied_SIA.Name = "открытьToolStripMenuItemGuied_SIA";
             this.открытьToolStripMenuItemGuied_SIA.Size = new System.Drawing.Size(157, 55);
             this.открытьToolStripMenuItemGuied_SIA.TabIndex = 7;
@@ -279,24 +279,26 @@
             // 
             // buttonAddGraphyks_SIA
             // 
+            this.buttonAddGraphyks_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.buttonAddGraphyks_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAddGraphyks_SIA.Location = new System.Drawing.Point(181, 108);
             this.buttonAddGraphyks_SIA.Name = "buttonAddGraphyks_SIA";
             this.buttonAddGraphyks_SIA.Size = new System.Drawing.Size(138, 65);
             this.buttonAddGraphyks_SIA.TabIndex = 14;
             this.buttonAddGraphyks_SIA.Text = "Добавить \r\nграфик";
-            this.buttonAddGraphyks_SIA.UseVisualStyleBackColor = true;
+            this.buttonAddGraphyks_SIA.UseVisualStyleBackColor = false;
             this.buttonAddGraphyks_SIA.Click += new System.EventHandler(this.buttonAddGraphyks_SIA_Click);
             // 
             // buttonDeleteGraphyks_SIA
             // 
+            this.buttonDeleteGraphyks_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.buttonDeleteGraphyks_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDeleteGraphyks_SIA.Location = new System.Drawing.Point(181, 179);
             this.buttonDeleteGraphyks_SIA.Name = "buttonDeleteGraphyks_SIA";
             this.buttonDeleteGraphyks_SIA.Size = new System.Drawing.Size(138, 57);
             this.buttonDeleteGraphyks_SIA.TabIndex = 15;
             this.buttonDeleteGraphyks_SIA.Text = "Удалить \r\nграфик";
-            this.buttonDeleteGraphyks_SIA.UseVisualStyleBackColor = true;
+            this.buttonDeleteGraphyks_SIA.UseVisualStyleBackColor = false;
             this.buttonDeleteGraphyks_SIA.Click += new System.EventHandler(this.buttonDeleteGraphyks_SIA_Click);
             // 
             // FormGraphyks_SIA

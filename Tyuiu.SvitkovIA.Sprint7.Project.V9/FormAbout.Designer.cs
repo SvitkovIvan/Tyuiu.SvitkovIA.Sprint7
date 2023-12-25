@@ -38,6 +38,7 @@
             // buttonOK_SIA
             // 
             this.buttonOK_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.buttonOK_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonOK_SIA.Location = new System.Drawing.Point(684, 422);
             this.buttonOK_SIA.Name = "buttonOK_SIA";
             this.buttonOK_SIA.Size = new System.Drawing.Size(159, 63);

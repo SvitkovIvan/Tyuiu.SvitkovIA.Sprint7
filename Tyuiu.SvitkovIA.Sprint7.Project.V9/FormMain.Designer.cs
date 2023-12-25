@@ -52,15 +52,19 @@
             this.textBoxMaxValue_SIA = new System.Windows.Forms.TextBox();
             this.buttonFilter_SIA = new System.Windows.Forms.Button();
             this.buttonSort_SIA = new System.Windows.Forms.Button();
+            this.buttonMaxValue_SIA = new System.Windows.Forms.Button();
+            this.buttonMinValue_SIA = new System.Windows.Forms.Button();
+            this.buttonMiddleValue_SIA = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOpenFile_SIA)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStripMenuItemHelp_SIA
             // 
             this.toolStripMenuItemHelp_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.toolStripMenuItemHelp_SIA.Location = new System.Drawing.Point(147, 369);
+            this.toolStripMenuItemHelp_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.toolStripMenuItemHelp_SIA.Location = new System.Drawing.Point(316, 550);
             this.toolStripMenuItemHelp_SIA.Name = "toolStripMenuItemHelp_SIA";
-            this.toolStripMenuItemHelp_SIA.Size = new System.Drawing.Size(159, 45);
+            this.toolStripMenuItemHelp_SIA.Size = new System.Drawing.Size(318, 79);
             this.toolStripMenuItemHelp_SIA.TabIndex = 0;
             this.toolStripMenuItemHelp_SIA.Text = "Cправка";
             this.toolStripMenuItemHelp_SIA.UseVisualStyleBackColor = false;
@@ -69,17 +73,19 @@
             // перейтиКРазделуToolStripMenuItem_SIA
             // 
             this.перейтиКРазделуToolStripMenuItem_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.перейтиКРазделуToolStripMenuItem_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.перейтиКРазделуToolStripMenuItem_SIA.Location = new System.Drawing.Point(12, 550);
             this.перейтиКРазделуToolStripMenuItem_SIA.Name = "перейтиКРазделуToolStripMenuItem_SIA";
-            this.перейтиКРазделуToolStripMenuItem_SIA.Size = new System.Drawing.Size(108, 51);
+            this.перейтиКРазделуToolStripMenuItem_SIA.Size = new System.Drawing.Size(108, 81);
             this.перейтиКРазделуToolStripMenuItem_SIA.TabIndex = 1;
-            this.перейтиКРазделуToolStripMenuItem_SIA.Text = "Перейти к разделу";
+            this.перейтиКРазделуToolStripMenuItem_SIA.Text = "Перейти к разделу\r\nGraphyks";
             this.перейтиКРазделуToolStripMenuItem_SIA.UseVisualStyleBackColor = false;
             this.перейтиКРазделуToolStripMenuItem_SIA.Click += new System.EventHandler(this.перейтиКРазделуToolStripMenuItem_SIA_Click);
             // 
             // открытьToolStripMenuItemGuied_SIA
             // 
             this.открытьToolStripMenuItemGuied_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.открытьToolStripMenuItemGuied_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.открытьToolStripMenuItemGuied_SIA.Location = new System.Drawing.Point(12, 418);
             this.открытьToolStripMenuItemGuied_SIA.Name = "открытьToolStripMenuItemGuied_SIA";
             this.открытьToolStripMenuItemGuied_SIA.Size = new System.Drawing.Size(108, 56);
@@ -91,9 +97,10 @@
             // открытьToolStripMenuItemFile_SIA
             // 
             this.открытьToolStripMenuItemFile_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.открытьToolStripMenuItemFile_SIA.Location = new System.Drawing.Point(12, 369);
+            this.открытьToolStripMenuItemFile_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.открытьToolStripMenuItemFile_SIA.Location = new System.Drawing.Point(12, 357);
             this.открытьToolStripMenuItemFile_SIA.Name = "открытьToolStripMenuItemFile_SIA";
-            this.открытьToolStripMenuItemFile_SIA.Size = new System.Drawing.Size(108, 41);
+            this.открытьToolStripMenuItemFile_SIA.Size = new System.Drawing.Size(108, 55);
             this.открытьToolStripMenuItemFile_SIA.TabIndex = 3;
             this.открытьToolStripMenuItemFile_SIA.Text = "Открыть\r\nItemFile";
             this.открытьToolStripMenuItemFile_SIA.UseVisualStyleBackColor = false;
@@ -106,7 +113,7 @@
             this.dataGridViewOpenFile_SIA.Name = "dataGridViewOpenFile_SIA";
             this.dataGridViewOpenFile_SIA.RowHeadersWidth = 51;
             this.dataGridViewOpenFile_SIA.RowTemplate.Height = 24;
-            this.dataGridViewOpenFile_SIA.Size = new System.Drawing.Size(596, 194);
+            this.dataGridViewOpenFile_SIA.Size = new System.Drawing.Size(622, 194);
             this.dataGridViewOpenFile_SIA.TabIndex = 4;
             // 
             // openFileDialog_SIA
@@ -116,6 +123,7 @@
             // сохранитьToolStripMenuItemFile_SIA
             // 
             this.сохранитьToolStripMenuItemFile_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.сохранитьToolStripMenuItemFile_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.сохранитьToolStripMenuItemFile_SIA.Location = new System.Drawing.Point(12, 489);
             this.сохранитьToolStripMenuItemFile_SIA.Name = "сохранитьToolStripMenuItemFile_SIA";
             this.сохранитьToolStripMenuItemFile_SIA.Size = new System.Drawing.Size(108, 45);
@@ -127,7 +135,8 @@
             // buttonAdd_SIA
             // 
             this.buttonAdd_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.buttonAdd_SIA.Location = new System.Drawing.Point(328, 418);
+            this.buttonAdd_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAdd_SIA.Location = new System.Drawing.Point(142, 418);
             this.buttonAdd_SIA.Name = "buttonAdd_SIA";
             this.buttonAdd_SIA.Size = new System.Drawing.Size(155, 56);
             this.buttonAdd_SIA.TabIndex = 6;
@@ -138,7 +147,8 @@
             // buttonDelete_SIA
             // 
             this.buttonDelete_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.buttonDelete_SIA.Location = new System.Drawing.Point(328, 357);
+            this.buttonDelete_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDelete_SIA.Location = new System.Drawing.Point(142, 357);
             this.buttonDelete_SIA.Name = "buttonDelete_SIA";
             this.buttonDelete_SIA.Size = new System.Drawing.Size(155, 55);
             this.buttonDelete_SIA.TabIndex = 7;
@@ -232,34 +242,38 @@
             // textBoxMiddleValue_SIA
             // 
             this.textBoxMiddleValue_SIA.BackColor = System.Drawing.Color.RosyBrown;
-            this.textBoxMiddleValue_SIA.Location = new System.Drawing.Point(147, 435);
+            this.textBoxMiddleValue_SIA.Location = new System.Drawing.Point(316, 357);
+            this.textBoxMiddleValue_SIA.Multiline = true;
             this.textBoxMiddleValue_SIA.Name = "textBoxMiddleValue_SIA";
-            this.textBoxMiddleValue_SIA.Size = new System.Drawing.Size(159, 22);
+            this.textBoxMiddleValue_SIA.Size = new System.Drawing.Size(159, 55);
             this.textBoxMiddleValue_SIA.TabIndex = 17;
             this.textBoxMiddleValue_SIA.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxMiddleValue_SIA_KeyUp);
             // 
             // textBoxMinValue_SIA
             // 
             this.textBoxMinValue_SIA.BackColor = System.Drawing.Color.RosyBrown;
-            this.textBoxMinValue_SIA.Location = new System.Drawing.Point(147, 463);
+            this.textBoxMinValue_SIA.Location = new System.Drawing.Point(316, 418);
+            this.textBoxMinValue_SIA.Multiline = true;
             this.textBoxMinValue_SIA.Name = "textBoxMinValue_SIA";
-            this.textBoxMinValue_SIA.Size = new System.Drawing.Size(159, 22);
+            this.textBoxMinValue_SIA.Size = new System.Drawing.Size(159, 51);
             this.textBoxMinValue_SIA.TabIndex = 18;
             this.textBoxMinValue_SIA.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxMinValue_SIA_KeyUp);
             // 
             // textBoxMaxValue_SIA
             // 
             this.textBoxMaxValue_SIA.BackColor = System.Drawing.Color.RosyBrown;
-            this.textBoxMaxValue_SIA.Location = new System.Drawing.Point(147, 496);
+            this.textBoxMaxValue_SIA.Location = new System.Drawing.Point(316, 475);
+            this.textBoxMaxValue_SIA.Multiline = true;
             this.textBoxMaxValue_SIA.Name = "textBoxMaxValue_SIA";
-            this.textBoxMaxValue_SIA.Size = new System.Drawing.Size(159, 22);
+            this.textBoxMaxValue_SIA.Size = new System.Drawing.Size(159, 59);
             this.textBoxMaxValue_SIA.TabIndex = 19;
             this.textBoxMaxValue_SIA.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxMaxValue_SIA_KeyUp);
             // 
             // buttonFilter_SIA
             // 
             this.buttonFilter_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.buttonFilter_SIA.Location = new System.Drawing.Point(328, 489);
+            this.buttonFilter_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonFilter_SIA.Location = new System.Drawing.Point(142, 484);
             this.buttonFilter_SIA.Name = "buttonFilter_SIA";
             this.buttonFilter_SIA.Size = new System.Drawing.Size(155, 55);
             this.buttonFilter_SIA.TabIndex = 20;
@@ -270,19 +284,56 @@
             // buttonSort_SIA
             // 
             this.buttonSort_SIA.BackColor = System.Drawing.Color.Maroon;
-            this.buttonSort_SIA.Location = new System.Drawing.Point(328, 550);
+            this.buttonSort_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSort_SIA.Location = new System.Drawing.Point(142, 550);
             this.buttonSort_SIA.Name = "buttonSort_SIA";
-            this.buttonSort_SIA.Size = new System.Drawing.Size(155, 53);
+            this.buttonSort_SIA.Size = new System.Drawing.Size(155, 79);
             this.buttonSort_SIA.TabIndex = 21;
             this.buttonSort_SIA.Text = "Сортировка";
             this.buttonSort_SIA.UseVisualStyleBackColor = false;
             this.buttonSort_SIA.Click += new System.EventHandler(this.buttonSort_SIA_Click);
             // 
+            // buttonMaxValue_SIA
+            // 
+            this.buttonMaxValue_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.buttonMaxValue_SIA.Location = new System.Drawing.Point(496, 475);
+            this.buttonMaxValue_SIA.Name = "buttonMaxValue_SIA";
+            this.buttonMaxValue_SIA.Size = new System.Drawing.Size(138, 59);
+            this.buttonMaxValue_SIA.TabIndex = 22;
+            this.buttonMaxValue_SIA.Text = "Максимальное \r\nзначение";
+            this.buttonMaxValue_SIA.UseVisualStyleBackColor = false;
+            this.buttonMaxValue_SIA.Click += new System.EventHandler(this.buttonMaxValue_SIA_Click);
+            // 
+            // buttonMinValue_SIA
+            // 
+            this.buttonMinValue_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.buttonMinValue_SIA.Location = new System.Drawing.Point(496, 418);
+            this.buttonMinValue_SIA.Name = "buttonMinValue_SIA";
+            this.buttonMinValue_SIA.Size = new System.Drawing.Size(136, 51);
+            this.buttonMinValue_SIA.TabIndex = 23;
+            this.buttonMinValue_SIA.Text = "Минимальное \r\nзначение";
+            this.buttonMinValue_SIA.UseVisualStyleBackColor = false;
+            this.buttonMinValue_SIA.Click += new System.EventHandler(this.buttonMinValue_SIA_Click);
+            // 
+            // buttonMiddleValue_SIA
+            // 
+            this.buttonMiddleValue_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.buttonMiddleValue_SIA.Location = new System.Drawing.Point(496, 357);
+            this.buttonMiddleValue_SIA.Name = "buttonMiddleValue_SIA";
+            this.buttonMiddleValue_SIA.Size = new System.Drawing.Size(136, 55);
+            this.buttonMiddleValue_SIA.TabIndex = 24;
+            this.buttonMiddleValue_SIA.Text = "Среднее \r\nзначение";
+            this.buttonMiddleValue_SIA.UseVisualStyleBackColor = false;
+            this.buttonMiddleValue_SIA.Click += new System.EventHandler(this.buttonMiddleValue_SIA_Click);
+            // 
             // FormMain_SIA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(658, 643);
+            this.ClientSize = new System.Drawing.Size(654, 641);
+            this.Controls.Add(this.buttonMiddleValue_SIA);
+            this.Controls.Add(this.buttonMinValue_SIA);
+            this.Controls.Add(this.buttonMaxValue_SIA);
             this.Controls.Add(this.buttonSort_SIA);
             this.Controls.Add(this.buttonFilter_SIA);
             this.Controls.Add(this.textBoxMaxValue_SIA);
@@ -339,6 +390,9 @@
         private System.Windows.Forms.TextBox textBoxMaxValue_SIA;
         private System.Windows.Forms.Button buttonFilter_SIA;
         private System.Windows.Forms.Button buttonSort_SIA;
+        private System.Windows.Forms.Button buttonMaxValue_SIA;
+        private System.Windows.Forms.Button buttonMinValue_SIA;
+        private System.Windows.Forms.Button buttonMiddleValue_SIA;
     }
 }
 

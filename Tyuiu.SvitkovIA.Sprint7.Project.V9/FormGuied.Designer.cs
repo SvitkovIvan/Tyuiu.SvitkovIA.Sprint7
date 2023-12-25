@@ -38,6 +38,7 @@
             // toolStripMenuItemBack_SIA
             // 
             this.toolStripMenuItemBack_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.toolStripMenuItemBack_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.toolStripMenuItemBack_SIA.Location = new System.Drawing.Point(12, 359);
             this.toolStripMenuItemBack_SIA.Name = "toolStripMenuItemBack_SIA";
             this.toolStripMenuItemBack_SIA.Size = new System.Drawing.Size(180, 79);
@@ -49,6 +50,7 @@
             // toolStripMenuItemHelp_SIA
             // 
             this.toolStripMenuItemHelp_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.toolStripMenuItemHelp_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.toolStripMenuItemHelp_SIA.Location = new System.Drawing.Point(633, 359);
             this.toolStripMenuItemHelp_SIA.Name = "toolStripMenuItemHelp_SIA";
             this.toolStripMenuItemHelp_SIA.Size = new System.Drawing.Size(186, 79);
