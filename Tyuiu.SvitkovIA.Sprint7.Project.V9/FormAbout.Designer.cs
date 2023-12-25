@@ -49,6 +49,7 @@
             // 
             // pictureBoxInformation_SIA
             // 
+            this.pictureBoxInformation_SIA.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBoxInformation_SIA.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxInformation_SIA.ErrorImage")));
             this.pictureBoxInformation_SIA.Image = global::Tyuiu.SvitkovIA.Sprint7.Project.V9.Properties.Resources.Разработчик;
             this.pictureBoxInformation_SIA.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxInformation_SIA.InitialImage")));
@@ -61,7 +62,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(485, 48);
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label1.Location = new System.Drawing.Point(485, 103);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(358, 176);
             this.label1.TabIndex = 2;
@@ -71,6 +73,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(871, 497);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBoxInformation_SIA);

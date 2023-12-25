@@ -309,7 +309,7 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
                         if (dataGridViewOpenFile_SIA.Rows[i].Cells[nugno].Value != null)
                         {
                             string elmnt = dataGridViewOpenFile_SIA.Rows[i].Cells[nugno].Value.ToString().ToLower();
-                            if (elmnt.StartsWith(textBoxFilter_SIA.Text.ToLower())) dataGridViewOpenFile_SIA.Rows[i].Cells[nugno].Selected = true;
+                            //if (elmnt.StartsWith(textBoxFilter_SIA.Text.ToLower())) dataGridViewOpenFile_SIA.Rows[i].Cells[nugno].Selected = true;
                         }
                     }
 
@@ -510,17 +510,30 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
 
                     if (nugno > -1)
                     {
-                        int counter = 0;
+                        int sum = 0; 
                         for (int r = 0; r < dataGridViewOpenFile_SIA.RowCount; r++)
                         {
-                            if (dataGridViewOpenFile_SIA.Rows[r].Cells[nugno].Selected == true) counter++;
+                            if (dataGridViewOpenFile_SIA.Rows[r].Cells[nugno].Selected == true)
+                            {
+                                int value;
+                                if (Int32.TryParse(dataGridViewOpenFile_SIA.Rows[r].Cells[nugno].Value.ToString(), out value))
+                                {
+                                    sum += value;
+                                }
+                            }
                         }
-                        textBoxQuantity_SIA.Text = Convert.ToString(counter);
+                        textBoxQuantity_SIA.Text = sum.ToString(); 
                     }
-                    else MessageBox.Show("Не выбран столбец", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    else
+                    {
+                        MessageBox.Show("Не выбран столбец", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
-            else MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else
+            {
+                MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void textBoxMiddleValue_SIA_KeyUp(object sender, KeyEventArgs e)
@@ -1020,6 +1033,88 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
                         }
                     }
                     else MessageBox.Show("Не выбран столбец", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void buttonSum_SIA_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewOpenFile_SIA.RowCount != 0)
+            {
+                
+                {
+                    int nugno = -1;
+                    for (int i = 0; i < dataGridViewOpenFile_SIA.RowCount; i++)
+                    {
+                        for (int j = 0; j < dataGridViewOpenFile_SIA.ColumnCount - 1; j++)
+                        {
+                            if (dataGridViewOpenFile_SIA.Rows[i].Cells[j].Selected == true)
+                            {
+                                nugno = j;
+                                break;
+                            }
+                            if (nugno > -1) break;
+                        }
+                    }
+
+                    if (nugno > -1)
+                    {
+                        int sum = 0;
+                        for (int r = 0; r < dataGridViewOpenFile_SIA.RowCount; r++)
+                        {
+                            if (dataGridViewOpenFile_SIA.Rows[r].Cells[nugno].Selected == true)
+                            {
+                                int value;
+                                if (Int32.TryParse(dataGridViewOpenFile_SIA.Rows[r].Cells[nugno].Value.ToString(), out value))
+                                {
+                                    sum += value;
+                                }
+                            }
+                        }
+                        textBoxQuantity_SIA.Text = sum.ToString();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Не выбран столбец", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void buttonQuantity_SIA_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewOpenFile_SIA.RowCount != 0)
+            {
+                
+                {
+                    int nugno = -1;
+                    for (int i = 0; i < dataGridViewOpenFile_SIA.RowCount - 1; i++)
+                    {
+                        for (int j = 0; j < dataGridViewOpenFile_SIA.ColumnCount - 1; j++)
+                        {
+                            if (dataGridViewOpenFile_SIA.Rows[i].Cells[j].Value != null)
+                            {
+                                if (dataGridViewOpenFile_SIA.Rows[i].Cells[j].Selected == true)
+                                {
+                                    nugno = j;
+                                    break;
+                                }
+                            }
+                            if (nugno > -1) break;
+                        }
+                    }
+
+                    int counter = 0;
+                    for (int r = 0; r < dataGridViewOpenFile_SIA.RowCount - 1; r++)
+                    {
+                        if (dataGridViewOpenFile_SIA.Rows[r].Cells[nugno].Selected == true) counter++;
+                    }
+                    textBoxQuantity_SIA.Text = Convert.ToString(counter);
                 }
             }
             else MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);

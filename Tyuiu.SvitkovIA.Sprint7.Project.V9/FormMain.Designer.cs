@@ -41,20 +41,18 @@
             this.textBoxSearch_SIA = new System.Windows.Forms.TextBox();
             this.textBoxSearch1_SIA = new System.Windows.Forms.TextBox();
             this.textBoxSearch2_SIA = new System.Windows.Forms.TextBox();
-            this.textBoxFilter_SIA = new System.Windows.Forms.TextBox();
-            this.textBoxFilter1_SIA = new System.Windows.Forms.TextBox();
-            this.comboBoxFilter_SIA = new System.Windows.Forms.ComboBox();
-            this.comboBoxSort_SIA = new System.Windows.Forms.ComboBox();
             this.textBoxQuantity_SIA = new System.Windows.Forms.TextBox();
-            this.textBoxSum_SIA = new System.Windows.Forms.TextBox();
             this.textBoxMiddleValue_SIA = new System.Windows.Forms.TextBox();
             this.textBoxMinValue_SIA = new System.Windows.Forms.TextBox();
             this.textBoxMaxValue_SIA = new System.Windows.Forms.TextBox();
-            this.buttonFilter_SIA = new System.Windows.Forms.Button();
             this.buttonSort_SIA = new System.Windows.Forms.Button();
             this.buttonMaxValue_SIA = new System.Windows.Forms.Button();
             this.buttonMinValue_SIA = new System.Windows.Forms.Button();
             this.buttonMiddleValue_SIA = new System.Windows.Forms.Button();
+            this.buttonSum_SIA = new System.Windows.Forms.Button();
+            this.buttonQuantity_SIA = new System.Windows.Forms.Button();
+            this.textBoxSum_SIA = new System.Windows.Forms.TextBox();
+            this.comboBoxSort_SIA = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOpenFile_SIA)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,9 +60,9 @@
             // 
             this.toolStripMenuItemHelp_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.toolStripMenuItemHelp_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.toolStripMenuItemHelp_SIA.Location = new System.Drawing.Point(316, 550);
+            this.toolStripMenuItemHelp_SIA.Location = new System.Drawing.Point(138, 550);
             this.toolStripMenuItemHelp_SIA.Name = "toolStripMenuItemHelp_SIA";
-            this.toolStripMenuItemHelp_SIA.Size = new System.Drawing.Size(318, 79);
+            this.toolStripMenuItemHelp_SIA.Size = new System.Drawing.Size(159, 79);
             this.toolStripMenuItemHelp_SIA.TabIndex = 0;
             this.toolStripMenuItemHelp_SIA.Text = "Cправка";
             this.toolStripMenuItemHelp_SIA.UseVisualStyleBackColor = false;
@@ -161,7 +159,7 @@
             this.textBoxSearch_SIA.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBoxSearch_SIA.Location = new System.Drawing.Point(12, 25);
             this.textBoxSearch_SIA.Name = "textBoxSearch_SIA";
-            this.textBoxSearch_SIA.Size = new System.Drawing.Size(216, 22);
+            this.textBoxSearch_SIA.Size = new System.Drawing.Size(140, 22);
             this.textBoxSearch_SIA.TabIndex = 8;
             // 
             // textBoxSearch1_SIA
@@ -170,7 +168,7 @@
             this.textBoxSearch1_SIA.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.textBoxSearch1_SIA.Location = new System.Drawing.Point(12, 58);
             this.textBoxSearch1_SIA.Name = "textBoxSearch1_SIA";
-            this.textBoxSearch1_SIA.Size = new System.Drawing.Size(216, 22);
+            this.textBoxSearch1_SIA.Size = new System.Drawing.Size(140, 22);
             this.textBoxSearch1_SIA.TabIndex = 9;
             this.textBoxSearch1_SIA.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxSearch_SIA_KeyUp);
             // 
@@ -179,65 +177,19 @@
             this.textBoxSearch2_SIA.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBoxSearch2_SIA.Location = new System.Drawing.Point(12, 95);
             this.textBoxSearch2_SIA.Name = "textBoxSearch2_SIA";
-            this.textBoxSearch2_SIA.Size = new System.Drawing.Size(216, 22);
+            this.textBoxSearch2_SIA.Size = new System.Drawing.Size(140, 22);
             this.textBoxSearch2_SIA.TabIndex = 10;
             this.textBoxSearch2_SIA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxSearch_SIA_KeyPress);
-            // 
-            // textBoxFilter_SIA
-            // 
-            this.textBoxFilter_SIA.BackColor = System.Drawing.SystemColors.Info;
-            this.textBoxFilter_SIA.Location = new System.Drawing.Point(272, 58);
-            this.textBoxFilter_SIA.Name = "textBoxFilter_SIA";
-            this.textBoxFilter_SIA.Size = new System.Drawing.Size(122, 22);
-            this.textBoxFilter_SIA.TabIndex = 11;
-            this.textBoxFilter_SIA.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxFilter_SIA_KeyDown);
-            // 
-            // textBoxFilter1_SIA
-            // 
-            this.textBoxFilter1_SIA.BackColor = System.Drawing.SystemColors.Info;
-            this.textBoxFilter1_SIA.Location = new System.Drawing.Point(272, 95);
-            this.textBoxFilter1_SIA.Name = "textBoxFilter1_SIA";
-            this.textBoxFilter1_SIA.Size = new System.Drawing.Size(117, 22);
-            this.textBoxFilter1_SIA.TabIndex = 12;
-            this.textBoxFilter1_SIA.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxFilter_SIA_KeyUp);
-            // 
-            // comboBoxFilter_SIA
-            // 
-            this.comboBoxFilter_SIA.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBoxFilter_SIA.FormattingEnabled = true;
-            this.comboBoxFilter_SIA.Location = new System.Drawing.Point(272, 25);
-            this.comboBoxFilter_SIA.Name = "comboBoxFilter_SIA";
-            this.comboBoxFilter_SIA.Size = new System.Drawing.Size(122, 24);
-            this.comboBoxFilter_SIA.TabIndex = 13;
-            this.comboBoxFilter_SIA.KeyDown += new System.Windows.Forms.KeyEventHandler(this.comboBoxSort_SIA_KeyDown);
-            // 
-            // comboBoxSort_SIA
-            // 
-            this.comboBoxSort_SIA.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.comboBoxSort_SIA.FormattingEnabled = true;
-            this.comboBoxSort_SIA.Location = new System.Drawing.Point(447, 25);
-            this.comboBoxSort_SIA.Name = "comboBoxSort_SIA";
-            this.comboBoxSort_SIA.Size = new System.Drawing.Size(161, 24);
-            this.comboBoxSort_SIA.TabIndex = 14;
-            this.comboBoxSort_SIA.SelectedIndexChanged += new System.EventHandler(this.comboBoxSort_SIA_SelectedIndexChanged);
             // 
             // textBoxQuantity_SIA
             // 
             this.textBoxQuantity_SIA.BackColor = System.Drawing.SystemColors.Highlight;
-            this.textBoxQuantity_SIA.Location = new System.Drawing.Point(447, 58);
+            this.textBoxQuantity_SIA.Location = new System.Drawing.Point(170, 23);
+            this.textBoxQuantity_SIA.Multiline = true;
             this.textBoxQuantity_SIA.Name = "textBoxQuantity_SIA";
-            this.textBoxQuantity_SIA.Size = new System.Drawing.Size(161, 22);
+            this.textBoxQuantity_SIA.Size = new System.Drawing.Size(140, 50);
             this.textBoxQuantity_SIA.TabIndex = 15;
             this.textBoxQuantity_SIA.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxQuantity_SIA_KeyUp);
-            // 
-            // textBoxSum_SIA
-            // 
-            this.textBoxSum_SIA.BackColor = System.Drawing.SystemColors.Highlight;
-            this.textBoxSum_SIA.Location = new System.Drawing.Point(447, 95);
-            this.textBoxSum_SIA.Name = "textBoxSum_SIA";
-            this.textBoxSum_SIA.Size = new System.Drawing.Size(161, 22);
-            this.textBoxSum_SIA.TabIndex = 16;
-            this.textBoxSum_SIA.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxSum_SIA_KeyUp);
             // 
             // textBoxMiddleValue_SIA
             // 
@@ -269,25 +221,13 @@
             this.textBoxMaxValue_SIA.TabIndex = 19;
             this.textBoxMaxValue_SIA.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxMaxValue_SIA_KeyUp);
             // 
-            // buttonFilter_SIA
-            // 
-            this.buttonFilter_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.buttonFilter_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonFilter_SIA.Location = new System.Drawing.Point(142, 484);
-            this.buttonFilter_SIA.Name = "buttonFilter_SIA";
-            this.buttonFilter_SIA.Size = new System.Drawing.Size(155, 55);
-            this.buttonFilter_SIA.TabIndex = 20;
-            this.buttonFilter_SIA.Text = "Фильтр";
-            this.buttonFilter_SIA.UseVisualStyleBackColor = false;
-            this.buttonFilter_SIA.Click += new System.EventHandler(this.buttonFilter_SIA_Click);
-            // 
             // buttonSort_SIA
             // 
             this.buttonSort_SIA.BackColor = System.Drawing.Color.Maroon;
             this.buttonSort_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSort_SIA.Location = new System.Drawing.Point(142, 550);
+            this.buttonSort_SIA.Location = new System.Drawing.Point(142, 489);
             this.buttonSort_SIA.Name = "buttonSort_SIA";
-            this.buttonSort_SIA.Size = new System.Drawing.Size(155, 79);
+            this.buttonSort_SIA.Size = new System.Drawing.Size(155, 45);
             this.buttonSort_SIA.TabIndex = 21;
             this.buttonSort_SIA.Text = "Сортировка";
             this.buttonSort_SIA.UseVisualStyleBackColor = false;
@@ -326,25 +266,66 @@
             this.buttonMiddleValue_SIA.UseVisualStyleBackColor = false;
             this.buttonMiddleValue_SIA.Click += new System.EventHandler(this.buttonMiddleValue_SIA_Click);
             // 
+            // buttonSum_SIA
+            // 
+            this.buttonSum_SIA.BackColor = System.Drawing.SystemColors.Highlight;
+            this.buttonSum_SIA.Location = new System.Drawing.Point(316, 81);
+            this.buttonSum_SIA.Name = "buttonSum_SIA";
+            this.buttonSum_SIA.Size = new System.Drawing.Size(130, 43);
+            this.buttonSum_SIA.TabIndex = 25;
+            this.buttonSum_SIA.Text = "Cумма \r\nэлементов";
+            this.buttonSum_SIA.UseVisualStyleBackColor = false;
+            this.buttonSum_SIA.Click += new System.EventHandler(this.buttonSum_SIA_Click);
+            // 
+            // buttonQuantity_SIA
+            // 
+            this.buttonQuantity_SIA.BackColor = System.Drawing.SystemColors.Highlight;
+            this.buttonQuantity_SIA.Location = new System.Drawing.Point(316, 25);
+            this.buttonQuantity_SIA.Name = "buttonQuantity_SIA";
+            this.buttonQuantity_SIA.Size = new System.Drawing.Size(130, 50);
+            this.buttonQuantity_SIA.TabIndex = 26;
+            this.buttonQuantity_SIA.Text = "Количество \r\nэлементов";
+            this.buttonQuantity_SIA.UseVisualStyleBackColor = false;
+            this.buttonQuantity_SIA.Click += new System.EventHandler(this.buttonQuantity_SIA_Click);
+            // 
+            // textBoxSum_SIA
+            // 
+            this.textBoxSum_SIA.BackColor = System.Drawing.SystemColors.Highlight;
+            this.textBoxSum_SIA.Location = new System.Drawing.Point(170, 79);
+            this.textBoxSum_SIA.Multiline = true;
+            this.textBoxSum_SIA.Name = "textBoxSum_SIA";
+            this.textBoxSum_SIA.Size = new System.Drawing.Size(140, 45);
+            this.textBoxSum_SIA.TabIndex = 16;
+            this.textBoxSum_SIA.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxSum_SIA_KeyUp);
+            // 
+            // comboBoxSort_SIA
+            // 
+            this.comboBoxSort_SIA.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.comboBoxSort_SIA.FormattingEnabled = true;
+            this.comboBoxSort_SIA.Location = new System.Drawing.Point(316, 550);
+            this.comboBoxSort_SIA.Name = "comboBoxSort_SIA";
+            this.comboBoxSort_SIA.Size = new System.Drawing.Size(159, 24);
+            this.comboBoxSort_SIA.TabIndex = 14;
+            this.comboBoxSort_SIA.SelectedIndexChanged += new System.EventHandler(this.comboBoxSort_SIA_SelectedIndexChanged);
+            // 
             // FormMain_SIA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(654, 641);
+            this.Controls.Add(this.buttonQuantity_SIA);
+            this.Controls.Add(this.buttonSum_SIA);
             this.Controls.Add(this.buttonMiddleValue_SIA);
             this.Controls.Add(this.buttonMinValue_SIA);
             this.Controls.Add(this.buttonMaxValue_SIA);
             this.Controls.Add(this.buttonSort_SIA);
-            this.Controls.Add(this.buttonFilter_SIA);
             this.Controls.Add(this.textBoxMaxValue_SIA);
             this.Controls.Add(this.textBoxMinValue_SIA);
             this.Controls.Add(this.textBoxMiddleValue_SIA);
             this.Controls.Add(this.textBoxSum_SIA);
             this.Controls.Add(this.textBoxQuantity_SIA);
             this.Controls.Add(this.comboBoxSort_SIA);
-            this.Controls.Add(this.comboBoxFilter_SIA);
-            this.Controls.Add(this.textBoxFilter1_SIA);
-            this.Controls.Add(this.textBoxFilter_SIA);
             this.Controls.Add(this.textBoxSearch2_SIA);
             this.Controls.Add(this.textBoxSearch1_SIA);
             this.Controls.Add(this.textBoxSearch_SIA);
@@ -379,20 +360,18 @@
         private System.Windows.Forms.TextBox textBoxSearch_SIA;
         private System.Windows.Forms.TextBox textBoxSearch1_SIA;
         private System.Windows.Forms.TextBox textBoxSearch2_SIA;
-        private System.Windows.Forms.TextBox textBoxFilter_SIA;
-        private System.Windows.Forms.TextBox textBoxFilter1_SIA;
-        private System.Windows.Forms.ComboBox comboBoxFilter_SIA;
-        private System.Windows.Forms.ComboBox comboBoxSort_SIA;
         private System.Windows.Forms.TextBox textBoxQuantity_SIA;
-        private System.Windows.Forms.TextBox textBoxSum_SIA;
         private System.Windows.Forms.TextBox textBoxMiddleValue_SIA;
         private System.Windows.Forms.TextBox textBoxMinValue_SIA;
         private System.Windows.Forms.TextBox textBoxMaxValue_SIA;
-        private System.Windows.Forms.Button buttonFilter_SIA;
         private System.Windows.Forms.Button buttonSort_SIA;
         private System.Windows.Forms.Button buttonMaxValue_SIA;
         private System.Windows.Forms.Button buttonMinValue_SIA;
         private System.Windows.Forms.Button buttonMiddleValue_SIA;
+        private System.Windows.Forms.Button buttonSum_SIA;
+        private System.Windows.Forms.Button buttonQuantity_SIA;
+        private System.Windows.Forms.TextBox textBoxSum_SIA;
+        private System.Windows.Forms.ComboBox comboBoxSort_SIA;
     }
 }
 
