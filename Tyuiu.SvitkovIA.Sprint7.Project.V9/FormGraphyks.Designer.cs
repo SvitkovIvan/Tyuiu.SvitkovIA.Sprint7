@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.openFileDialog_SIA = new System.Windows.Forms.OpenFileDialog();
             this.toolStripMenuItemHelp_SIA = new System.Windows.Forms.Button();
             this.toolStripMenuItemBack_SIA = new System.Windows.Forms.Button();
@@ -68,9 +68,10 @@
             // toolStripMenuItemHelp_SIA
             // 
             this.toolStripMenuItemHelp_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.toolStripMenuItemHelp_SIA.Location = new System.Drawing.Point(940, 351);
+            this.toolStripMenuItemHelp_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.toolStripMenuItemHelp_SIA.Location = new System.Drawing.Point(940, 374);
             this.toolStripMenuItemHelp_SIA.Name = "toolStripMenuItemHelp_SIA";
-            this.toolStripMenuItemHelp_SIA.Size = new System.Drawing.Size(186, 41);
+            this.toolStripMenuItemHelp_SIA.Size = new System.Drawing.Size(186, 55);
             this.toolStripMenuItemHelp_SIA.TabIndex = 0;
             this.toolStripMenuItemHelp_SIA.Text = "Справка";
             this.toolStripMenuItemHelp_SIA.UseVisualStyleBackColor = false;
@@ -79,9 +80,10 @@
             // toolStripMenuItemBack_SIA
             // 
             this.toolStripMenuItemBack_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.toolStripMenuItemBack_SIA.Location = new System.Drawing.Point(532, 504);
+            this.toolStripMenuItemBack_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.toolStripMenuItemBack_SIA.Location = new System.Drawing.Point(532, 527);
             this.toolStripMenuItemBack_SIA.Name = "toolStripMenuItemBack_SIA";
-            this.toolStripMenuItemBack_SIA.Size = new System.Drawing.Size(157, 46);
+            this.toolStripMenuItemBack_SIA.Size = new System.Drawing.Size(157, 55);
             this.toolStripMenuItemBack_SIA.TabIndex = 1;
             this.toolStripMenuItemBack_SIA.Text = "Назад";
             this.toolStripMenuItemBack_SIA.UseVisualStyleBackColor = false;
@@ -90,6 +92,7 @@
             // сохранитьToolStripMenuItemGraphyks_SIA
             // 
             this.сохранитьToolStripMenuItemGraphyks_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.сохранитьToolStripMenuItemGraphyks_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.сохранитьToolStripMenuItemGraphyks_SIA.Location = new System.Drawing.Point(532, 302);
             this.сохранитьToolStripMenuItemGraphyks_SIA.Name = "сохранитьToolStripMenuItemGraphyks_SIA";
             this.сохранитьToolStripMenuItemGraphyks_SIA.Size = new System.Drawing.Size(157, 43);
@@ -111,11 +114,11 @@
             this.Column7,
             this.Column8,
             this.Column9});
-            this.dataGridViewGraphyks_SIA.Location = new System.Drawing.Point(450, 12);
+            this.dataGridViewGraphyks_SIA.Location = new System.Drawing.Point(392, 12);
             this.dataGridViewGraphyks_SIA.Name = "dataGridViewGraphyks_SIA";
             this.dataGridViewGraphyks_SIA.RowHeadersWidth = 51;
             this.dataGridViewGraphyks_SIA.RowTemplate.Height = 24;
-            this.dataGridViewGraphyks_SIA.Size = new System.Drawing.Size(676, 270);
+            this.dataGridViewGraphyks_SIA.Size = new System.Drawing.Size(734, 284);
             this.dataGridViewGraphyks_SIA.TabIndex = 3;
             // 
             // Column1
@@ -184,9 +187,10 @@
             // buttonSaveFile_SIA
             // 
             this.buttonSaveFile_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.buttonSaveFile_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSaveFile_SIA.Location = new System.Drawing.Point(940, 302);
             this.buttonSaveFile_SIA.Name = "buttonSaveFile_SIA";
-            this.buttonSaveFile_SIA.Size = new System.Drawing.Size(186, 43);
+            this.buttonSaveFile_SIA.Size = new System.Drawing.Size(186, 66);
             this.buttonSaveFile_SIA.TabIndex = 4;
             this.buttonSaveFile_SIA.Text = "Cохранить \r\nфайл";
             this.buttonSaveFile_SIA.UseVisualStyleBackColor = false;
@@ -195,9 +199,10 @@
             // buttonDelete_SIA
             // 
             this.buttonDelete_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.buttonDelete_SIA.Location = new System.Drawing.Point(532, 453);
+            this.buttonDelete_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDelete_SIA.Location = new System.Drawing.Point(532, 467);
             this.buttonDelete_SIA.Name = "buttonDelete_SIA";
-            this.buttonDelete_SIA.Size = new System.Drawing.Size(157, 45);
+            this.buttonDelete_SIA.Size = new System.Drawing.Size(157, 54);
             this.buttonDelete_SIA.TabIndex = 5;
             this.buttonDelete_SIA.Text = "Удалить";
             this.buttonDelete_SIA.UseVisualStyleBackColor = false;
@@ -206,7 +211,8 @@
             // buttonAdd_SIA
             // 
             this.buttonAdd_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.buttonAdd_SIA.Location = new System.Drawing.Point(532, 398);
+            this.buttonAdd_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAdd_SIA.Location = new System.Drawing.Point(532, 412);
             this.buttonAdd_SIA.Name = "buttonAdd_SIA";
             this.buttonAdd_SIA.Size = new System.Drawing.Size(157, 49);
             this.buttonAdd_SIA.TabIndex = 6;
@@ -217,11 +223,12 @@
             // открытьToolStripMenuItemGuied_SIA
             // 
             this.открытьToolStripMenuItemGuied_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.открытьToolStripMenuItemGuied_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.открытьToolStripMenuItemGuied_SIA.Location = new System.Drawing.Point(532, 351);
             this.открытьToolStripMenuItemGuied_SIA.Name = "открытьToolStripMenuItemGuied_SIA";
-            this.открытьToolStripMenuItemGuied_SIA.Size = new System.Drawing.Size(157, 41);
+            this.открытьToolStripMenuItemGuied_SIA.Size = new System.Drawing.Size(157, 55);
             this.открытьToolStripMenuItemGuied_SIA.TabIndex = 7;
-            this.открытьToolStripMenuItemGuied_SIA.Text = "Открыть";
+            this.открытьToolStripMenuItemGuied_SIA.Text = "Открыть \r\nGuied";
             this.открытьToolStripMenuItemGuied_SIA.UseVisualStyleBackColor = false;
             this.открытьToolStripMenuItemGuied_SIA.Click += new System.EventHandler(this.открытьToolStripMenuItemGuied_SIA_Click);
             // 
@@ -243,10 +250,11 @@
             // buttonOpenFile_SIA
             // 
             this.buttonOpenFile_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.buttonOpenFile_SIA.Location = new System.Drawing.Point(940, 398);
+            this.buttonOpenFile_SIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonOpenFile_SIA.Location = new System.Drawing.Point(940, 435);
             this.buttonOpenFile_SIA.Name = "buttonOpenFile_SIA";
             this.buttonOpenFile_SIA.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.buttonOpenFile_SIA.Size = new System.Drawing.Size(186, 49);
+            this.buttonOpenFile_SIA.Size = new System.Drawing.Size(186, 63);
             this.buttonOpenFile_SIA.TabIndex = 12;
             this.buttonOpenFile_SIA.Text = "Открыть файл";
             this.buttonOpenFile_SIA.UseVisualStyleBackColor = false;
@@ -254,17 +262,17 @@
             // 
             // chartFunction_SIA
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartFunction_SIA.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chartFunction_SIA.Legends.Add(legend2);
+            chartArea3.Name = "ChartArea1";
+            this.chartFunction_SIA.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chartFunction_SIA.Legends.Add(legend3);
             this.chartFunction_SIA.Location = new System.Drawing.Point(12, 302);
             this.chartFunction_SIA.Name = "chartFunction_SIA";
             this.chartFunction_SIA.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chartFunction_SIA.Series.Add(series2);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chartFunction_SIA.Series.Add(series3);
             this.chartFunction_SIA.Size = new System.Drawing.Size(490, 300);
             this.chartFunction_SIA.TabIndex = 13;
             this.chartFunction_SIA.Text = "chart1";
@@ -295,7 +303,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1153, 630);
+            this.ClientSize = new System.Drawing.Size(1152, 630);
             this.Controls.Add(this.buttonDeleteGraphyks_SIA);
             this.Controls.Add(this.buttonAddGraphyks_SIA);
             this.Controls.Add(this.chartFunction_SIA);

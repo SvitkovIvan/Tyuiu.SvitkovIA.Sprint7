@@ -40,7 +40,7 @@
             this.buttonOK_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.buttonOK_SIA.Location = new System.Drawing.Point(684, 422);
             this.buttonOK_SIA.Name = "buttonOK_SIA";
-            this.buttonOK_SIA.Size = new System.Drawing.Size(150, 63);
+            this.buttonOK_SIA.Size = new System.Drawing.Size(159, 63);
             this.buttonOK_SIA.TabIndex = 0;
             this.buttonOK_SIA.Text = "ОК";
             this.buttonOK_SIA.UseVisualStyleBackColor = false;
@@ -51,9 +51,9 @@
             this.pictureBoxInformation_SIA.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxInformation_SIA.ErrorImage")));
             this.pictureBoxInformation_SIA.Image = global::Tyuiu.SvitkovIA.Sprint7.Project.V9.Properties.Resources.Разработчик;
             this.pictureBoxInformation_SIA.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxInformation_SIA.InitialImage")));
-            this.pictureBoxInformation_SIA.Location = new System.Drawing.Point(12, 12);
+            this.pictureBoxInformation_SIA.Location = new System.Drawing.Point(3, 12);
             this.pictureBoxInformation_SIA.Name = "pictureBoxInformation_SIA";
-            this.pictureBoxInformation_SIA.Size = new System.Drawing.Size(467, 409);
+            this.pictureBoxInformation_SIA.Size = new System.Drawing.Size(467, 408);
             this.pictureBoxInformation_SIA.TabIndex = 1;
             this.pictureBoxInformation_SIA.TabStop = false;
             // 
@@ -70,7 +70,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(861, 497);
+            this.ClientSize = new System.Drawing.Size(871, 497);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBoxInformation_SIA);
             this.Controls.Add(this.buttonOK_SIA);

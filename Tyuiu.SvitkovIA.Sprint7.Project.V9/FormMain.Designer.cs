@@ -69,9 +69,9 @@
             // перейтиКРазделуToolStripMenuItem_SIA
             // 
             this.перейтиКРазделуToolStripMenuItem_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.перейтиКРазделуToolStripMenuItem_SIA.Location = new System.Drawing.Point(12, 507);
+            this.перейтиКРазделуToolStripMenuItem_SIA.Location = new System.Drawing.Point(12, 550);
             this.перейтиКРазделуToolStripMenuItem_SIA.Name = "перейтиКРазделуToolStripMenuItem_SIA";
-            this.перейтиКРазделуToolStripMenuItem_SIA.Size = new System.Drawing.Size(108, 43);
+            this.перейтиКРазделуToolStripMenuItem_SIA.Size = new System.Drawing.Size(108, 51);
             this.перейтиКРазделуToolStripMenuItem_SIA.TabIndex = 1;
             this.перейтиКРазделуToolStripMenuItem_SIA.Text = "Перейти к разделу";
             this.перейтиКРазделуToolStripMenuItem_SIA.UseVisualStyleBackColor = false;
@@ -80,9 +80,9 @@
             // открытьToolStripMenuItemGuied_SIA
             // 
             this.открытьToolStripMenuItemGuied_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.открытьToolStripMenuItemGuied_SIA.Location = new System.Drawing.Point(12, 401);
+            this.открытьToolStripMenuItemGuied_SIA.Location = new System.Drawing.Point(12, 418);
             this.открытьToolStripMenuItemGuied_SIA.Name = "открытьToolStripMenuItemGuied_SIA";
-            this.открытьToolStripMenuItemGuied_SIA.Size = new System.Drawing.Size(108, 44);
+            this.открытьToolStripMenuItemGuied_SIA.Size = new System.Drawing.Size(108, 56);
             this.открытьToolStripMenuItemGuied_SIA.TabIndex = 2;
             this.открытьToolStripMenuItemGuied_SIA.Text = "Открыть\r\nItemGuied";
             this.открытьToolStripMenuItemGuied_SIA.UseVisualStyleBackColor = false;
@@ -91,7 +91,7 @@
             // открытьToolStripMenuItemFile_SIA
             // 
             this.открытьToolStripMenuItemFile_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.открытьToolStripMenuItemFile_SIA.Location = new System.Drawing.Point(12, 354);
+            this.открытьToolStripMenuItemFile_SIA.Location = new System.Drawing.Point(12, 369);
             this.открытьToolStripMenuItemFile_SIA.Name = "открытьToolStripMenuItemFile_SIA";
             this.открытьToolStripMenuItemFile_SIA.Size = new System.Drawing.Size(108, 41);
             this.открытьToolStripMenuItemFile_SIA.TabIndex = 3;
@@ -106,7 +106,7 @@
             this.dataGridViewOpenFile_SIA.Name = "dataGridViewOpenFile_SIA";
             this.dataGridViewOpenFile_SIA.RowHeadersWidth = 51;
             this.dataGridViewOpenFile_SIA.RowTemplate.Height = 24;
-            this.dataGridViewOpenFile_SIA.Size = new System.Drawing.Size(757, 194);
+            this.dataGridViewOpenFile_SIA.Size = new System.Drawing.Size(596, 194);
             this.dataGridViewOpenFile_SIA.TabIndex = 4;
             // 
             // openFileDialog_SIA
@@ -116,7 +116,7 @@
             // сохранитьToolStripMenuItemFile_SIA
             // 
             this.сохранитьToolStripMenuItemFile_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.сохранитьToolStripMenuItemFile_SIA.Location = new System.Drawing.Point(12, 455);
+            this.сохранитьToolStripMenuItemFile_SIA.Location = new System.Drawing.Point(12, 489);
             this.сохранитьToolStripMenuItemFile_SIA.Name = "сохранитьToolStripMenuItemFile_SIA";
             this.сохранитьToolStripMenuItemFile_SIA.Size = new System.Drawing.Size(108, 45);
             this.сохранитьToolStripMenuItemFile_SIA.TabIndex = 5;
@@ -127,9 +127,9 @@
             // buttonAdd_SIA
             // 
             this.buttonAdd_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.buttonAdd_SIA.Location = new System.Drawing.Point(328, 409);
+            this.buttonAdd_SIA.Location = new System.Drawing.Point(328, 418);
             this.buttonAdd_SIA.Name = "buttonAdd_SIA";
-            this.buttonAdd_SIA.Size = new System.Drawing.Size(132, 42);
+            this.buttonAdd_SIA.Size = new System.Drawing.Size(155, 56);
             this.buttonAdd_SIA.TabIndex = 6;
             this.buttonAdd_SIA.Text = "Добавить";
             this.buttonAdd_SIA.UseVisualStyleBackColor = false;
@@ -140,7 +140,7 @@
             this.buttonDelete_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.buttonDelete_SIA.Location = new System.Drawing.Point(328, 357);
             this.buttonDelete_SIA.Name = "buttonDelete_SIA";
-            this.buttonDelete_SIA.Size = new System.Drawing.Size(132, 41);
+            this.buttonDelete_SIA.Size = new System.Drawing.Size(155, 55);
             this.buttonDelete_SIA.TabIndex = 7;
             this.buttonDelete_SIA.Text = "Удалить";
             this.buttonDelete_SIA.UseVisualStyleBackColor = false;
@@ -151,7 +151,7 @@
             this.textBoxSearch_SIA.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBoxSearch_SIA.Location = new System.Drawing.Point(12, 25);
             this.textBoxSearch_SIA.Name = "textBoxSearch_SIA";
-            this.textBoxSearch_SIA.Size = new System.Drawing.Size(241, 22);
+            this.textBoxSearch_SIA.Size = new System.Drawing.Size(216, 22);
             this.textBoxSearch_SIA.TabIndex = 8;
             // 
             // textBoxSearch1_SIA
@@ -160,7 +160,7 @@
             this.textBoxSearch1_SIA.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.textBoxSearch1_SIA.Location = new System.Drawing.Point(12, 58);
             this.textBoxSearch1_SIA.Name = "textBoxSearch1_SIA";
-            this.textBoxSearch1_SIA.Size = new System.Drawing.Size(241, 22);
+            this.textBoxSearch1_SIA.Size = new System.Drawing.Size(216, 22);
             this.textBoxSearch1_SIA.TabIndex = 9;
             this.textBoxSearch1_SIA.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxSearch_SIA_KeyUp);
             // 
@@ -169,7 +169,7 @@
             this.textBoxSearch2_SIA.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBoxSearch2_SIA.Location = new System.Drawing.Point(12, 95);
             this.textBoxSearch2_SIA.Name = "textBoxSearch2_SIA";
-            this.textBoxSearch2_SIA.Size = new System.Drawing.Size(241, 22);
+            this.textBoxSearch2_SIA.Size = new System.Drawing.Size(216, 22);
             this.textBoxSearch2_SIA.TabIndex = 10;
             this.textBoxSearch2_SIA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxSearch_SIA_KeyPress);
             // 
@@ -178,7 +178,7 @@
             this.textBoxFilter_SIA.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxFilter_SIA.Location = new System.Drawing.Point(272, 58);
             this.textBoxFilter_SIA.Name = "textBoxFilter_SIA";
-            this.textBoxFilter_SIA.Size = new System.Drawing.Size(154, 22);
+            this.textBoxFilter_SIA.Size = new System.Drawing.Size(122, 22);
             this.textBoxFilter_SIA.TabIndex = 11;
             this.textBoxFilter_SIA.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxFilter_SIA_KeyDown);
             // 
@@ -187,7 +187,7 @@
             this.textBoxFilter1_SIA.BackColor = System.Drawing.SystemColors.Info;
             this.textBoxFilter1_SIA.Location = new System.Drawing.Point(272, 95);
             this.textBoxFilter1_SIA.Name = "textBoxFilter1_SIA";
-            this.textBoxFilter1_SIA.Size = new System.Drawing.Size(154, 22);
+            this.textBoxFilter1_SIA.Size = new System.Drawing.Size(117, 22);
             this.textBoxFilter1_SIA.TabIndex = 12;
             this.textBoxFilter1_SIA.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxFilter_SIA_KeyUp);
             // 
@@ -197,7 +197,7 @@
             this.comboBoxFilter_SIA.FormattingEnabled = true;
             this.comboBoxFilter_SIA.Location = new System.Drawing.Point(272, 25);
             this.comboBoxFilter_SIA.Name = "comboBoxFilter_SIA";
-            this.comboBoxFilter_SIA.Size = new System.Drawing.Size(154, 24);
+            this.comboBoxFilter_SIA.Size = new System.Drawing.Size(122, 24);
             this.comboBoxFilter_SIA.TabIndex = 13;
             this.comboBoxFilter_SIA.KeyDown += new System.Windows.Forms.KeyEventHandler(this.comboBoxSort_SIA_KeyDown);
             // 
@@ -207,7 +207,7 @@
             this.comboBoxSort_SIA.FormattingEnabled = true;
             this.comboBoxSort_SIA.Location = new System.Drawing.Point(447, 25);
             this.comboBoxSort_SIA.Name = "comboBoxSort_SIA";
-            this.comboBoxSort_SIA.Size = new System.Drawing.Size(221, 24);
+            this.comboBoxSort_SIA.Size = new System.Drawing.Size(161, 24);
             this.comboBoxSort_SIA.TabIndex = 14;
             this.comboBoxSort_SIA.SelectedIndexChanged += new System.EventHandler(this.comboBoxSort_SIA_SelectedIndexChanged);
             // 
@@ -216,7 +216,7 @@
             this.textBoxQuantity_SIA.BackColor = System.Drawing.SystemColors.Highlight;
             this.textBoxQuantity_SIA.Location = new System.Drawing.Point(447, 58);
             this.textBoxQuantity_SIA.Name = "textBoxQuantity_SIA";
-            this.textBoxQuantity_SIA.Size = new System.Drawing.Size(221, 22);
+            this.textBoxQuantity_SIA.Size = new System.Drawing.Size(161, 22);
             this.textBoxQuantity_SIA.TabIndex = 15;
             this.textBoxQuantity_SIA.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxQuantity_SIA_KeyUp);
             // 
@@ -225,7 +225,7 @@
             this.textBoxSum_SIA.BackColor = System.Drawing.SystemColors.Highlight;
             this.textBoxSum_SIA.Location = new System.Drawing.Point(447, 95);
             this.textBoxSum_SIA.Name = "textBoxSum_SIA";
-            this.textBoxSum_SIA.Size = new System.Drawing.Size(221, 22);
+            this.textBoxSum_SIA.Size = new System.Drawing.Size(161, 22);
             this.textBoxSum_SIA.TabIndex = 16;
             this.textBoxSum_SIA.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxSum_SIA_KeyUp);
             // 
@@ -259,9 +259,9 @@
             // buttonFilter_SIA
             // 
             this.buttonFilter_SIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.buttonFilter_SIA.Location = new System.Drawing.Point(328, 463);
+            this.buttonFilter_SIA.Location = new System.Drawing.Point(328, 489);
             this.buttonFilter_SIA.Name = "buttonFilter_SIA";
-            this.buttonFilter_SIA.Size = new System.Drawing.Size(132, 37);
+            this.buttonFilter_SIA.Size = new System.Drawing.Size(155, 55);
             this.buttonFilter_SIA.TabIndex = 20;
             this.buttonFilter_SIA.Text = "Фильтр";
             this.buttonFilter_SIA.UseVisualStyleBackColor = false;
@@ -270,9 +270,9 @@
             // buttonSort_SIA
             // 
             this.buttonSort_SIA.BackColor = System.Drawing.Color.Maroon;
-            this.buttonSort_SIA.Location = new System.Drawing.Point(328, 507);
+            this.buttonSort_SIA.Location = new System.Drawing.Point(328, 550);
             this.buttonSort_SIA.Name = "buttonSort_SIA";
-            this.buttonSort_SIA.Size = new System.Drawing.Size(132, 43);
+            this.buttonSort_SIA.Size = new System.Drawing.Size(155, 53);
             this.buttonSort_SIA.TabIndex = 21;
             this.buttonSort_SIA.Text = "Сортировка";
             this.buttonSort_SIA.UseVisualStyleBackColor = false;
@@ -282,7 +282,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(781, 562);
+            this.ClientSize = new System.Drawing.Size(658, 643);
             this.Controls.Add(this.buttonSort_SIA);
             this.Controls.Add(this.buttonFilter_SIA);
             this.Controls.Add(this.textBoxMaxValue_SIA);

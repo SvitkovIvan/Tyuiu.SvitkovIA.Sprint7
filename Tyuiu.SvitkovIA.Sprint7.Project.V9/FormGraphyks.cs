@@ -81,9 +81,9 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
 
 
             private void buttonOpenFile_SIA_Click(object sender, EventArgs e)
-        {
-            try
             {
+                try
+                {
                 buttonDelete_SIA.Visible = true;
                 buttonAdd_SIA.Visible = true;
                 buttonAddGraphyks_SIA.Visible = true;
@@ -112,9 +112,9 @@ namespace Tyuiu.SvitkovIA.Sprint7.Project.V9
                 }
                 this.dataGridViewGraphyks_SIA.DefaultCellStyle.Font = new Font("Tahoma", 9);
                 dataGridViewGraphyks_SIA.AutoResizeColumns();
-            }
-            catch
-            {
+                }
+                catch
+                {
                 MessageBox.Show("Файл не выбран", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
